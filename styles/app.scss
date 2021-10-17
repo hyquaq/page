@@ -20,6 +20,7 @@
   //   variable
   --width-page: 80%;
   --padding-header-footer: 1rem 0;
+  --padding-top-bottom-header-footer: 1rem;
 }
 
 .container {
@@ -33,5 +34,7 @@
 }
 
 @import "header";
+@import "responsive-header";
 @import "scrollbar";
 @import "footer";
+@import "responsive-footer";

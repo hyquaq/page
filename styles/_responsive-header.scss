@@ -1,0 +1,45 @@
+@media (max-width: 922px) {
+    header {
+        .container {
+            position: relative;
+            .menu {
+                position: absolute;
+                background-color: var(--mau-3);
+                z-index: 9999;
+
+                top: calc(-1 * var(--padding-top-bottom-header-footer));
+                height: 100vh;
+                width: var(--width-header-on-mobile);
+
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 1rem;
+
+                transition: left 0.2s linear;
+                left: calc(-1 * var(--width-header-on-mobile) - 10vw);
+                &.active {
+                    left: -10vw;
+                }
+
+                a {
+                    padding: 1rem 0 1rem 2rem;
+                    width: 100%;
+                    transition: 0.5s;
+
+                    &:hover {
+                        opacity: 0.8;
+                        color: var(--mau-3);
+                        background-color: var(--mau-4);
+                    }
+                }
+            }
+
+            .hamburger {
+                font-size: var(--size-hamburger);
+                display: block;
+                color: var(--mau-4);
+                cursor: pointer;
+            }
+        }
+    }
+}

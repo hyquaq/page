@@ -13,6 +13,7 @@
   --mau-5: #000;
   --width-page: 80%;
   --padding-header-footer: 1rem 0;
+  --padding-top-bottom-header-footer: 1rem;
 }
 
 .container {
@@ -30,6 +31,8 @@ header {
   --height-header: 200px;
   --width-header: 100%;
   --width-menu: 50%;
+  --size-hamburger: 2rem;
+  --width-header-on-mobile: 50vw;
   width: var(--width-header);
   background-color: var(--mau-1);
   padding: var(--padding-header-footer);
@@ -59,7 +62,47 @@ header .container .menu a {
   text-decoration: none;
   gap: 6px;
 }
+header .container .hamburger {
+  display: none;
+}
 
+@media (max-width: 922px) {
+  header .container {
+    position: relative;
+  }
+  header .container .menu {
+    position: absolute;
+    background-color: var(--mau-3);
+    z-index: 9999;
+    top: calc(-1 * var(--padding-top-bottom-header-footer));
+    height: 100vh;
+    width: var(--width-header-on-mobile);
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    transition: left 0.2s linear;
+    left: calc(-1 * var(--width-header-on-mobile) - 10vw);
+  }
+  header .container .menu.active {
+    left: -10vw;
+  }
+  header .container .menu a {
+    padding: 1rem 0 1rem 2rem;
+    width: 100%;
+    transition: 0.5s;
+  }
+  header .container .menu a:hover {
+    opacity: 0.8;
+    color: var(--mau-3);
+    background-color: var(--mau-4);
+  }
+  header .container .hamburger {
+    font-size: var(--size-hamburger);
+    display: block;
+    color: var(--mau-4);
+    cursor: pointer;
+  }
+}
 ::-webkit-scrollbar {
   /* 1 */
   width: 12px;
@@ -98,12 +141,25 @@ header .container .menu a {
 footer {
   --size-logo-social: 2rem;
   --space-logo-social: 0.5rem;
+  --height-map: 400px;
   background-color: var(--mau-1);
   padding: var(--padding-header-footer);
+}
+footer .map {
+  height: var(--height-map);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  bottom: var(--padding-top-bottom-header-footer);
+}
+footer .map iframe {
+  width: 100%;
+  height: 100%;
 }
 footer .container {
   justify-content: space-around;
   align-items: center;
+  gap: 1rem;
 }
 footer .container .address {
   color: var(--mau-4);
@@ -115,6 +171,16 @@ footer .container .menu-social a {
   font-size: var(--size-logo-social);
   color: var(--mau-4);
   text-decoration: none;
+  transition: opacity 0.15s;
+}
+footer .container .menu-social a:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 922px) {
+  footer .container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=render.css.map */

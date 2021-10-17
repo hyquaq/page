@@ -3,6 +3,8 @@ header {
   --height-header: 200px;
   --width-header: 100%;
   --width-menu: 50%;
+  --size-hamburger: 2rem;
+  --width-header-on-mobile: 50vw;
 
   width: var(--width-header);
   background-color: var(--mau-1);
@@ -32,6 +34,10 @@ header {
         text-decoration: none;
         gap: 6px;
       }
+    }
+
+    .hamburger {
+      display: none;
     }
   }
 }
