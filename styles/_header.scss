@@ -24,8 +24,12 @@ header {
     align-items: center;
 
     .logo {
+      display: flex;
       border-radius: 50%;
       overflow: hidden;
+
+      background-color: var(--mau-4);
+      border: 2px solid var(--mau-4);
       img {
         width: var(--size-logo);
         height: var(--size-logo);

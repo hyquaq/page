@@ -54,8 +54,11 @@ header .container {
   align-items: center;
 }
 header .container .logo {
+  display: flex;
   border-radius: 50%;
   overflow: hidden;
+  background-color: var(--mau-4);
+  border: 2px solid var(--mau-4);
 }
 header .container .logo img {
   width: var(--size-logo);
@@ -162,30 +165,23 @@ footer {
   background-color: var(--mau-1);
   padding: var(--padding-header-footer);
 }
-footer .map {
-  height: var(--height-map);
-  width: 100%;
-  position: relative;
-  z-index: 0;
-  bottom: var(--padding-top-bottom-header-footer);
+footer .address {
+  color: var(--mau-4);
 }
-footer .map iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: 0.25s;
-}
-footer .map iframe.resize {
-  width: 50%;
-  margin-left: 50%;
+footer .address h1,
+footer .address p {
+  margin: 0.5rem 0;
 }
 footer .container {
   justify-content: space-around;
   align-items: center;
   gap: 1rem;
 }
-footer .container .address {
-  color: var(--mau-4);
+footer .container .map {
+  flex: 1;
+}
+footer .container .map iframe {
+  width: 100%;
 }
 footer .container .menu-social {
   gap: var(--space-logo-social);
