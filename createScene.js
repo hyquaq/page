@@ -68,8 +68,8 @@ function createScene() {
 
   // Thêm DOM của renderer vào
   // container ta đã tạo trong HTML
-  container = document.getElementById("intro");
-  container.appendChild(renderer.domElement);
+  containerKHOA = document.getElementById("intro");
+  containerKHOA.appendChild(renderer.domElement);
   
 
 
