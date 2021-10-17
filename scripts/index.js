@@ -17,3 +17,7 @@ document.querySelectorAll('.menu a').forEach(
         })
     }
 )
+
+window.addEventListener("scroll", e => {
+
+})
