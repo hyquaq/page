@@ -25,6 +25,10 @@
   --padding-top-bottom-header-footer: 1rem;
 }
 
+canvas {
+  width: 100% !important;
+}
+
 .container {
   width: var(--width-page);
   margin: auto;
