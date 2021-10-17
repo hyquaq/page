@@ -1,7 +1,7 @@
 footer {
     --size-logo-social: 2rem;
     --space-logo-social: 0.5rem;
-    --height-map: 400px;
+    --height-map: 300px;
 
     background-color: var(--mau-1);
     padding: var(--padding-header-footer);
@@ -10,10 +10,13 @@ footer {
         height: var(--height-map);
         width: 100%;
         position: relative;
-        z-index: 1;
+        z-index: 0;
         bottom: var(--padding-top-bottom-header-footer);
 
         iframe {
+            position: absolute;
+            // top: -10rem;
+            // z-index: -12;
             width: 100%;
             height: 100%;
         }
