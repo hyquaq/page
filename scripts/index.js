@@ -1,5 +1,5 @@
 
-
+// menu hamburger tren mobile
 document.querySelector(".hamburger").addEventListener('click', () => {
 
     document.querySelector("header .menu").classList.toggle('active');
@@ -10,6 +10,7 @@ document.querySelector(".hamburger").addEventListener('click', () => {
 })
 
 
+// close menu khi minh da click
 document.querySelectorAll('.menu a').forEach(
     (element) => {
         element.addEventListener('click', (e) => {
@@ -18,6 +19,17 @@ document.querySelectorAll('.menu a').forEach(
     }
 )
 
-window.addEventListener("scroll", e => {
 
+// change background header when scroll
+window.addEventListener('scroll', (e) => {
+
+    // console.log(document.documentElement.clientHeight);
+    console.log(window.scrollY);
+    if (window.scrollY > 10) {
+        document.querySelector("header").classList.remove("transparent");
+    } else {
+        document.querySelector("header").classList.add("transparent");
+
+    }
 })
+
