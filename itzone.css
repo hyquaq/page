@@ -1,0 +1,30 @@
+
+#intro {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #45648849,#0065a4b6);
+    /* position: absolute;
+    top: 0;
+    z-index: -99; */
+    text-align: center;
+}
+
+#chaomung {
+    position: relative;
+    font-size:250%;
+    color: #0066a4;
+    top: 13%;
+    font-weight: 650;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 1px 1px 5px #333;
+    display: inline-block;
+    padding: 3px;
+    z-index: 100;
+    border-radius: 6px;
+}
+#chaomung:hover{
+    cursor: pointer;
+    background-color: #ffbd45;
+    opacity: 0.75;
+}
+
