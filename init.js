@@ -3,7 +3,7 @@ window.addEventListener("load", init, true);
 function init() {
   // cài đặt scene, camera, và renderer
   createScene();
-  lockcamera();
+
   // thêm ánh sáng
   createLights();
   // thêm các đối tượng
