@@ -11,21 +11,46 @@
 
 #chaomung {
     position: relative;
-    font-size:250%;
+    font-size:2.5em;
     color: #0066a4;
-    top: 27%;
-    font-weight: 650;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 1px 1px 5px #333;
+    top: 30%;
+    font-weight: normal;
+    font-family:consolas;
+    box-shadow: 1px 1px 5px #ccc;
     display: inline-block;
-    padding: 3px;
+    padding: 6px 15px;
     z-index: 100;
     border-radius: 6px;
+    text-shadow: 10px 10px 5px #333;
+    height:68.4px;
+    width: 462.92px;
+    overflow: hidden;
+    line-height:68.4px;
+    transition: ease .5s;
 }
+#chaomung div {
+    animation: textTyping 4s linear infinite;
+    box-shadow: 10px 0px 0px #0066a4;
+    display: inline-block;
+    position: relative;
+}
+@keyframes textTyping {
+    0%,90%,100%
+    {
+        width: 200px;
+    }
+    30%,60% 
+    {
+        width:432.96px;
+    }
+}
+
 #chaomung:hover{
     cursor: pointer;
     background-color: #ffbd45;
+    font-weight: 650;
     opacity: 0.75;
+    text-shadow: 2px 5px 1px #333;
 }
 
 #activity {
@@ -45,7 +70,7 @@
     color: #0066a4;
     top: 27%;
     font-weight: 650;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: consolas;
     box-shadow: 1px 1px 5px #333;
     display: inline-block;
     padding: 3px;
