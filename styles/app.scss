@@ -1,0 +1,37 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  // reset css
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aleo", serif;
+  scroll-behavior: smooth;
+
+  //   color
+  --mau-0: transparent;
+  --mau-1: #0266a4;
+  --mau-2: #f01e27;
+  --mau-3: #ba72d5;
+  --mau-4: #fff;
+  --mau-5: #000;
+
+  //   variable
+  --width-page: 80%;
+  --padding-header-footer: 1rem 0;
+}
+
+.container {
+  width: var(--width-page);
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+
+@import "header";
+@import "scrollbar";
+@import "footer";

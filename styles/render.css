@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aleo", serif;
+  scroll-behavior: smooth;
+  --mau-0: transparent;
+  --mau-1: #0266a4;
+  --mau-2: #f01e27;
+  --mau-3: #ba72d5;
+  --mau-4: #fff;
+  --mau-5: #000;
+  --width-page: 80%;
+  --padding-header-footer: 1rem 0;
+}
+
+.container {
+  width: var(--width-page);
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+
+header {
+  --size-logo: 50px;
+  --height-header: 200px;
+  --width-header: 100%;
+  --width-menu: 50%;
+  width: var(--width-header);
+  background-color: var(--mau-1);
+  padding: var(--padding-header-footer);
+  position: fixed;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  border-radius: 50%;
+  overflow: hidden;
+}
+header .container .logo img {
+  width: var(--size-logo);
+  height: var(--size-logo);
+}
+header .container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: var(--width-menu);
+}
+header .container .menu a {
+  color: var(--mau-4);
+  text-decoration: none;
+  gap: 6px;
+}
+
+::-webkit-scrollbar {
+  /* 1 */
+  width: 12px;
+  background-color: #2d2e30;
+}
+
+::-webkit-scrollbar-button {
+  /* 2 */
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  /* 3 */
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 4 */
+}
+
+::-webkit-scrollbar-thumb {
+  /* 5 */
+  border: 2px solid var(--mau-5);
+  margin: 0 auto;
+  background-color: var(--mau-4);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  /* 6 */
+}
+
+::-webkit-resizer {
+  /* 7 */
+}
+
+footer {
+  --size-logo-social: 2rem;
+  --space-logo-social: 0.5rem;
+  background-color: var(--mau-1);
+  padding: var(--padding-header-footer);
+}
+footer .container {
+  justify-content: space-around;
+  align-items: center;
+}
+footer .container .address {
+  color: var(--mau-4);
+}
+footer .container .menu-social {
+  gap: var(--space-logo-social);
+}
+footer .container .menu-social a {
+  font-size: var(--size-logo-social);
+  color: var(--mau-4);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=render.css.map */

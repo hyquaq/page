@@ -1,0 +1,25 @@
+footer {
+    --size-logo-social: 2rem;
+    --space-logo-social: 0.5rem;
+
+    background-color: var(--mau-1);
+    padding: var(--padding-header-footer);
+
+    .container {
+        justify-content: space-around;
+        align-items: center;
+
+        .address {
+            color: var(--mau-4);
+        }
+
+        .menu-social {
+            gap: var(--space-logo-social);
+            a {
+                font-size: var(--size-logo-social);
+                color: var(--mau-4);
+                text-decoration: none;
+            }
+        }
+    }
+}
