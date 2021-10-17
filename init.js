@@ -14,4 +14,6 @@ function init() {
   // bắt đầu vòng lặp cập nhật vị trí các đối tượng
   // và render scene trong mỗi khung hình
   loop();
+  //xem xet lai
+  //controls = new THREE.OrbitControls(camera, renderer.domElement);
 }
