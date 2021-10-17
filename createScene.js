@@ -37,10 +37,10 @@ function createScene() {
 
   // Đặt vị trí cho camera
   camera.position.x = 0;
-  camera.position.z = 350;
-  camera.position.y = 200;
+  camera.position.z = 700;
+  camera.position.y = 0;
  
-    dVector = new THREE.Vector3(0, 0, 0);
+    dVector = new THREE.Vector3(0, -500, 0);//y=-500
   camera.lookAt(dVector);
 
     //...............................The X axis is red. The Y axis is green. The Z axis is blue.
@@ -68,8 +68,8 @@ function createScene() {
 
   // Thêm DOM của renderer vào
   // container ta đã tạo trong HTML
-  containerKHOA = document.getElementById("intro");
-  containerKHOA.appendChild(renderer.domElement);
+  container = document.getElementById("intro");
+  container.appendChild(renderer.domElement);
   
 
 
