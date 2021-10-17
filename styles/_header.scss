@@ -59,4 +59,18 @@ header {
       display: none;
     }
   }
+
+  .close-menu {
+    position: absolute;
+    // background-color: red;
+    inset: 0;
+    width: 50vw;
+    height: 100vh;
+    left: 50vw;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }

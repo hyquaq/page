@@ -85,6 +85,17 @@ header .container .menu a:hover i {
 header .container .hamburger {
   display: none;
 }
+header .close-menu {
+  position: absolute;
+  inset: 0;
+  width: 50vw;
+  height: 100vh;
+  left: 50vw;
+  display: none;
+}
+header .close-menu.active {
+  display: block;
+}
 
 @media (max-width: 922px) {
   header .container {
