@@ -40,9 +40,18 @@ footer {
             gap: var(--space-logo-social);
             a {
                 font-size: var(--size-logo-social);
-                color: var(--mau-4);
                 text-decoration: none;
                 transition: opacity 0.15s;
+                display: flex;
+
+                --color: #f0f;
+
+                padding: 0.2rem;
+                color: var(--mau-4);
+                border-radius: 50%;
+                padding: 0.2rem;
+                background-color: var(--color);
+                box-shadow: 0.5px 0.5px 1.5px var(--mau-5);
 
                 &:hover {
                     opacity: 0.6;

@@ -67,6 +67,13 @@ header .container .menu a {
   color: var(--mau-4);
   text-decoration: none;
   gap: 6px;
+  transition: opacity 0.1s;
+}
+header .container .menu a:hover {
+  opacity: 0.7;
+}
+header .container .menu a:hover i {
+  font-weight: 900;
 }
 header .container .hamburger {
   display: none;
@@ -181,9 +188,16 @@ footer .container .menu-social {
 }
 footer .container .menu-social a {
   font-size: var(--size-logo-social);
-  color: var(--mau-4);
   text-decoration: none;
   transition: opacity 0.15s;
+  display: flex;
+  --color: #f0f;
+  padding: 0.2rem;
+  color: var(--mau-4);
+  border-radius: 50%;
+  padding: 0.2rem;
+  background-color: var(--color);
+  box-shadow: 0.5px 0.5px 1.5px var(--mau-5);
 }
 footer .container .menu-social a:hover {
   opacity: 0.6;
