@@ -19,6 +19,11 @@ footer {
             // z-index: -12;
             width: 100%;
             height: 100%;
+            transition: 0.25s;
+            &.resize {
+                width: 50%;
+                margin-left: 50%;
+            }
         }
     }
 
