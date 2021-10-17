@@ -1,5 +1,5 @@
 
-// menu hamburger tren mobile
+
 document.querySelector(".hamburger").addEventListener('click', () => {
 
     document.querySelector("header .menu").classList.toggle('active');
@@ -9,10 +9,15 @@ document.querySelector(".hamburger").addEventListener('click', () => {
     // if (window.innerWidth <= 920) {
     //     document.querySelector('.map iframe').classList.toggle('resize');
     // }
+    console.log(window.innerWidth <= 920);
+    if (window.innerWidth <= 920) {
+        document.querySelector('.map iframe').classList.toggle('resize');
+    }
+    // khoa
+    document.querySelector("#chaomung").classList.toggle('farindex');
 })
 
 
-// close menu khi minh da click
 document.querySelectorAll('.menu a').forEach(
     (element) => {
         element.addEventListener('click', (e) => {
@@ -22,18 +27,8 @@ document.querySelectorAll('.menu a').forEach(
     }
 )
 
+window.addEventListener("scroll", e => {
 
-// change background header when scroll
-window.addEventListener('scroll', (e) => {
-
-    // console.log(document.documentElement.clientHeight);
-    console.log(window.scrollY);
-    if (window.scrollY > 10) {
-        document.querySelector("header").classList.remove("transparent");
-    } else {
-        document.querySelector("header").classList.add("transparent");
-
-    }
 })
 
 window.addEventListener("click", e => {
