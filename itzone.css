@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body {
+    position: relative;
+    font-family: 'Aleo', serif, 'Helvetica', 'Arial', sans-serif;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+#header {
+    height:46px;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 1px 1px 3px #333;
+    position: fixed;
+}
+li{
+    list-style-type: none;
+}
+
+#nav {
+    height: 46px;
+    /* display: inline-block; */
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#nav>li+li {
+    margin-left:20px;
+}
+
+#nav>li{
+    display: inline-block !important;
+    height: 46px;
+}
+
+#nav li{
+    position: relative;
+    display: block;
+}
+
+#nav li:hover>a{
+    color: #000;
+    background-color: #0066a4 !important;
+    border-radius: 10px;
+}
+
+#nav >li >a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase
+}
+
+#nav li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    height: 46px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav{
+    display: none; 
+    position: absolute;
+    background-color: #7ec142;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+#nav .subnav a{
+    min-width: 160px;
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+    height: 38px !important;
+}
+
+#intro {
+    height: 90%;
+    width: 100%;
+    background: linear-gradient(to top, #45648849,#0065a4b6);
+    /* position: absolute;
+    top: 0;
+    z-index: -99; */
+    text-align: center;
+}
+
+#chaomung {
+    position: relative;
+    font-size:250%;
+    color: #0066a4;
+    top: 12%;
+    font-weight: 650;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 1px 1px 5px #333;
+    display: inline-block;
+    padding: 3px;
+    z-index: 100;
+    border-radius: 6px;
+}
+#chaomung:hover{
+    cursor: pointer;
+    background-color: #ffbd45;
+    opacity: 0.75;
+}
+
+#activity {
+    width: 100%;
+    height: 500px;
+    background-color: #ffbe45a4;
+    text-align: center;
+    padding: 20px;
+    margin-top:5px;
+    box-shadow: 0px -1px 10px #333;
+}
