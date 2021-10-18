@@ -1,6 +1,6 @@
 Box2 = function () {
   //                    nen
-  var geom2 = new THREE.SphereGeometry(50, 20, 20);
+  var geom2 = new THREE.SphereGeometry(51, 20, 20);
   var mat2 = new THREE.MeshPhongMaterial({
     color: Colors.maincolor,
     transparent: false,
@@ -247,8 +247,8 @@ Box2 = function () {
   
     // đặt vị trí phía dưới scene
     box2.mesh.position.set(0, 350,0);
-    // box2.mesh.rotation.z  = -0.2
-  box2.mesh.rotation.x  = 0.5 ;
+    box2.mesh.rotation.y  = -Math.PI;
+  box2.mesh.rotation.x  = 0.5;
   box2.mesh.scale.set(0.7, 0.7, 0.7);
     // thêm lưới này vào scene1.5
     scene.add(box2.mesh);
