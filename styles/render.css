@@ -116,6 +116,9 @@ header .close-menu.active {
   }
   header .container .menu.active {
     left: -10vw;
+    
+    <!-- test-->
+    margin-left: 32px;
   }
   header .container .menu a {
     padding: 1rem 0 1rem 2rem;
