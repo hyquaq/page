@@ -72,6 +72,7 @@
   
   .animationHeader {
     animation: scrollmenu ease-in-out 1s;
+    opacity: 0.75;
   }
   
   @keyframes scrollmenu{
@@ -133,6 +134,7 @@
 
   .animationHeader {
     animation: scrollmenu ease-in-out 1s;
+    opacity: 0.75;
   }
   @keyframes scrollmenu{
     from{
