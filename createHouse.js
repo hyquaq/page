@@ -1,6 +1,6 @@
 Box = function () {
   //                    nen
-  var geom2 = new THREE.SphereGeometry(50, 20, 20);
+  var geom2 = new THREE.SphereGeometry(1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
     color: Colors.color,
     transparent: false,
@@ -248,7 +248,7 @@ function createHouse() {
   // đặt vị trí phía dưới scene
     box.mesh.position.set(0, 350  ,0);
     // box.mesh.rotation.y  = -Math.PI/2 ;
-  box.mesh.rotation.x  = 0.5 ;
+  box.mesh.rotation.x  = 0.5 +Math.PI;
   box.mesh.scale.set(0.7, 0.7, 0.7);
   // thêm lưới này vào scene
   scene.add(box.mesh);
