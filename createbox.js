@@ -1,8 +1,8 @@
 Box2 = function () {
   //                    nen
-  var geom2 = new THREE.SphereGeometry(50, 70, 70);
+  var geom2 = new THREE.SphereGeometry(50, 20, 20);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -13,7 +13,7 @@ Box2 = function () {
     //////////////////////-
     var geom3 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
     var mat3 = new THREE.MeshPhongMaterial({
-      color: Colors.color,
+      color: Colors.maincolor,
       transparent: false,
       opacity: 1,
       shading: THREE.FlatShading,
@@ -26,7 +26,7 @@ Box2 = function () {
   //                         vach1
   var geom2 = new THREE.BoxGeometry(139, 30, 28, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -40,7 +40,7 @@ Box2 = function () {
   //                         vach2
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -54,7 +54,7 @@ Box2 = function () {
   //                         vach1
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -66,7 +66,7 @@ Box2 = function () {
   ///////////////////////vach 2
   var geom2 = new THREE.BoxGeometry(139, 30, 28, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -80,7 +80,7 @@ Box2 = function () {
   //////////////////z
   var geom2 = new THREE.BoxGeometry(96, 30, 28, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -93,7 +93,7 @@ Box2 = function () {
   //                         vach2
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -105,7 +105,7 @@ Box2 = function () {
   //                         vach3
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -120,7 +120,7 @@ Box2 = function () {
 
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -133,7 +133,7 @@ Box2 = function () {
   ///////vach2
   var geom2 = new THREE.BoxGeometry(102, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -147,7 +147,7 @@ Box2 = function () {
   ///////vach3
   var geom2 = new THREE.BoxGeometry(102, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -161,7 +161,7 @@ Box2 = function () {
   ///////xoay1
   var geom2 = new THREE.CylinderGeometry(15, 15, 29, 100);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -175,7 +175,7 @@ Box2 = function () {
   ///////xoay2
   var geom2 = new THREE.CylinderGeometry(15, 15, 29, 100);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -189,7 +189,7 @@ Box2 = function () {
   ///////////////////////////////E
   var geom2 = new THREE.BoxGeometry(120, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -203,7 +203,7 @@ Box2 = function () {
   /////////////vach 1-2
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -215,7 +215,7 @@ Box2 = function () {
   //
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
@@ -227,7 +227,7 @@ Box2 = function () {
   // vachgiua
   var geom2 = new THREE.BoxGeometry(79, 29, 29, 1, 1, 1);
   var mat2 = new THREE.MeshPhongMaterial({
-    color: Colors.color,
+    color: Colors.maincolor,
     transparent: false,
     opacity: 1,
     shading: THREE.FlatShading,
