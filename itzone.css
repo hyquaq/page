@@ -8,6 +8,7 @@
     z-index: -99; */
     text-align: center;
   }
+  /* laptop */
   @media (min-width: 1024px) {
   #chaomung {
     position: relative;
@@ -63,7 +64,27 @@
     margin-top: 5px;
     box-shadow: 0px -1px 10px #333;
   }
+
+  /* //chinh sua -header */
+  .menu a {
+    font-size: 110%;
+  }
+  
+  .animationHeader {
+    animation: scrollmenu ease-in-out 1s;
+  }
+  
+  @keyframes scrollmenu{
+    from{
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
 }
+
+ /* mobile */
 @media (max-width: 739px) {
   #chaomung {
     position: relative;
@@ -108,4 +129,21 @@
       width: 50vw;
     }
   }
+
+
+  .animationHeader {
+    animation: scrollmenu ease-in-out 1s;
+  }
+  @keyframes scrollmenu{
+    from{
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }
 }
+
+
+
+
