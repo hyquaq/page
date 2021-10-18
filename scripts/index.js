@@ -36,6 +36,6 @@ window.addEventListener("click", e => {
     if ([...e.target.classList].includes('close-menu')) {
         document.querySelector("header .menu").classList.remove('active');
         document.querySelector("header .close-menu").classList.remove('active');
-
+        document.querySelector("#chaomung").classList.toggle('farindex');
     }
 })
