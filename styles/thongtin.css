@@ -6,8 +6,10 @@ a:visited {
     text-decoration: none;
 }
 #hoat-dong {
-    background-color: none;
-    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 80%;
+    height: 850px;
+    margin: auto;
 }
 #hoat-dong h1 {
     text-align: center;
@@ -81,7 +83,7 @@ a:visited {
 #hoat-dong .bottom .recent:hover,
 #hoat-dong .bottom .feature:hover {
     height: 600px;
-    transform: translateY(-30px);
+    transform: translateY(-50px);
 }
 #hoat-dong .bottom .incoming:hover .more,
 #hoat-dong .bottom .recent:hover .more,
