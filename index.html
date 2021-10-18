@@ -115,7 +115,7 @@
 
         <div id="intro">
           <div id="chaomung">
-            <div>Welcome to ITzone club!</div>
+            <div>Welcome To ITzone Club!</div>
           </div>
         </div>
 
@@ -193,7 +193,8 @@
         </h1>
         <div
           class="w3-main w3-content w3-padding"
-          style="max-width: 1200px; margin-top: 48px">
+          style="max-width: 1200px; margin-top: 48px"
+        >
           <!-- First Photo Grid-->
           <div class="w3-row-padding w3-padding-16 w3-center" id="food">
             <div class="w3-quarter">
@@ -1302,8 +1303,10 @@
     <script>
       var resetAnimation = document.querySelector("#resetAnimation");
       resetAnimation.onclick = function () {
-        box.mesh.rotation.x = 0.5 + Math.PI;
-        box2.mesh.rotation.y = -Math.PI;
+        setTimeout(function () {
+          box.mesh.rotation.x = 0.5 + Math.PI;
+          box2.mesh.rotation.y = -Math.PI;
+        }, 800);
       };
     </script>
   </body>
