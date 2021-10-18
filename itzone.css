@@ -66,13 +66,32 @@
   }
 
   /* //chinh sua -header */
+  header .khoiheader {
+    border-top: 84px solid var(--mau-1);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position:absolute;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    opacity: 0.5;
+  }
+  .container {
+    position: relative;
+    z-index: 100;
+  }
+
   .menu a {
     font-size: 110%;
+    padding-top: 10px;
   }
   
   .animationHeader {
     animation: scrollmenu ease-in-out 1s;
-    opacity: 0.75;
+    /* opacity: 0.75; */
+      box-shadow: 0px 1px 10px #333;
   }
   
   @keyframes scrollmenu{
