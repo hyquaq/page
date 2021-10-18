@@ -161,7 +161,7 @@
 
   .animationHeader {
     animation: scrollmenu ease-in-out 1s;
-    opacity: 0.75;
+    z-index: 9999;
   }
   @keyframes scrollmenu{
     from{
@@ -171,6 +171,7 @@
         transform: translateY(0);
     }
   }
+
 }
 
 
