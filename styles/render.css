@@ -42,6 +42,7 @@ header {
   background-color: var(--mau-1);
   padding: var(--padding-header-footer);
   position: fixed;
+  z-index: 2;
   transition: background-color 0.2s linear;
 }
 header.transparent {

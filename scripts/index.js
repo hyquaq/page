@@ -25,10 +25,8 @@ window.addEventListener("scroll", function (event) {
   var scroll = this.scrollY;
   if (scroll > 200) {
     document.querySelector("header").classList.remove("transparent");
-    document.querySelector("header").classList.add("animationHeader");
   } else {
     document.querySelector("header").classList.add("transparent");
-    document.querySelector("header").classList.remove("animationHeader");
   }
 });
 

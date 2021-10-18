@@ -88,40 +88,6 @@
     box-shadow: 0px -1px 10px #333;
   }
 
-  /* //chinh sua -header */
-  .animationHeader {
-    animation: scrollmenu ease-in-out 1s;
-    opacity: 0.9;
-    box-shadow: 0px 1px 10px #333;
-    z-index: 9999;
-  }
-  
-  @keyframes scrollmenu{
-    from{
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-  }
-
-  header .khoiheader {
-    border-top: 84px solid var(--mau-1);
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    position:absolute;
-    width: 100%;
-    z-index: 0;
-    top: 0;
-    opacity: 0.5;
-  }
-  .container {
-    position: relative;
-    z-index: 100;
-  }
-
   .menu a {
     font-size: 110%;
     padding: 10px 10px 0px 10px;
@@ -131,8 +97,7 @@
     opacity: 1 !important;
     background-color: #0266a4;
     color: rgb(250, 176, 176) !important;
-  }
-  
+  } 
 }
 
  /* mobile */
@@ -184,7 +149,7 @@
 
   .animationHeader {
     animation: scrollmenu ease-in-out 1s;
-    z-index: 9999;
+    z-index: 100;
   }
   @keyframes scrollmenu{
     from{
