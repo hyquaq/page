@@ -40,3 +40,15 @@ window.addEventListener("click", (e) => {
     document.querySelector("#chaomung").classList.toggle("farindex");
   }
 });
+
+document.addEventListener(
+  "mousedown",
+  function (e) {
+    var rong = e.screenY;
+    if (rong < 300) {
+      box.mesh.rotation.x = 0.5 + Math.PI;
+      box2.mesh.rotation.y = -Math.PI;
+    }
+  },
+  false
+);
