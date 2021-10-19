@@ -114,3 +114,53 @@ div .more {
     display: none;
     transition: 0.2s;
 }
+#icon-more {
+    position: absolute;
+    font-size: 30px;
+    width: 90%;
+    bottom: 10px;
+    text-align: center;
+    margin-left: 5%;
+    display: none;
+}
+@media only screen and (max-width: 510px){
+    #hoat-dong .bottom{
+        flex-direction: column;
+    }
+    #hoat-dong .bottom .incoming, 
+    #hoat-dong .bottom .recent,
+    #hoat-dong .bottom .feature{
+        width: 100%;
+        height: 380px;
+        margin-bottom: 50px;
+    }
+    div .more {
+        display: none;
+        bottom: 50px;
+    }
+    #icon-more {
+        display: block;
+    }
+#hoat-dong .bottom .incoming:hover .more,
+#hoat-dong .bottom .recent:hover .more,
+#hoat-dong .bottom .feature:hover .more {
+   display: none;
+}
+#hoat-dong .bottom .incoming:hover,
+#hoat-dong .bottom .recent:hover,
+#hoat-dong .bottom .feature:hover {
+    height: 380px;
+    transform: translateY(0px);
+}
+#hoat-dong .bottom .incoming .content,
+#hoat-dong .bottom .recent .content,
+#hoat-dong .bottom .feature .content {
+    height: 50px;
+    margin-top: -15px;
+}
+#hoat-dong .bottom .incoming:hover .content,
+#hoat-dong .bottom .recent:hover .content,
+#hoat-dong .bottom .feature:hover .content {
+    height: 50px;
+}
+}
