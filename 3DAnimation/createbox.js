@@ -20,6 +20,7 @@ Box2 = function () {
     });
     var vach1 = new THREE.Mesh(geom3, mat3);
     vach1.position.set(-295, -29, 0);
+    vach1.rotation.y = 0.07;
     vach1.receiveShadow = true;
     this.mesh.add(vach1);
 
@@ -33,7 +34,8 @@ Box2 = function () {
   });
   var vach1 = new THREE.Mesh(geom2, mat2);
   vach1.position.set(-295, 26, 0);
-  vach1.rotation.z = Math.PI / 2;
+    vach1.rotation.y = 0.07;
+    vach1.rotation.z = Math.PI / 2;
   vach1.receiveShadow = true;
   this.mesh.add(vach1);
 
@@ -46,7 +48,8 @@ Box2 = function () {
     shading: THREE.FlatShading,
   });
   var vach1 = new THREE.Mesh(geom2, mat2);
-  vach1.position.set(-295, 81, 0);
+    vach1.rotation.y = 0.07;
+    vach1.position.set(-295, 81, 0);
   vach1.receiveShadow = true;
   this.mesh.add(vach1);
 
@@ -61,7 +64,8 @@ Box2 = function () {
   });
   var vach1 = new THREE.Mesh(geom2, mat2);
   vach1.position.set(-195, 81, 0);
-  vach1.receiveShadow = true;
+    vach1.rotation.y = 0.045;
+    vach1.receiveShadow = true;
   this.mesh.add(vach1);
   ///////////////////////vach 2
   var geom2 = new THREE.BoxGeometry(139, 30, 28, 1, 1, 1);
@@ -74,7 +78,8 @@ Box2 = function () {
   var vach1 = new THREE.Mesh(geom2, mat2);
   vach1.position.set(-195, 26, 0);
   vach1.rotation.z = Math.PI / 2;
-  vach1.receiveShadow = true;
+    vach1.rotation.y = 0.045;
+    vach1.receiveShadow = true;
   this.mesh.add(vach1);
 
   //////////////////z
@@ -88,7 +93,8 @@ Box2 = function () {
   var vach1 = new THREE.Mesh(geom2, mat2);
   vach1.position.set(-95, 16, 0);
   vach1.rotation.z = Math.PI / 3.3;
-  vach1.receiveShadow = true;
+    vach1.rotation.y = 0.03;
+    vach1.receiveShadow = true;
   this.mesh.add(vach1);
   //                         vach2
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
@@ -100,7 +106,8 @@ Box2 = function () {
   });
   var vach1 = new THREE.Mesh(geom2, mat2);
   vach1.position.set(-95, 61, 0);
-  vach1.receiveShadow = true;
+    vach1.rotation.y = 0.03;
+    vach1.receiveShadow = true;
   this.mesh.add(vach1);
   //                         vach3
   var geom2 = new THREE.BoxGeometry(80, 30, 30, 1, 1, 1);
@@ -112,7 +119,8 @@ Box2 = function () {
   });
   var vach1 = new THREE.Mesh(geom2, mat2);
   vach1.position.set(-95, -29, 0);
-  vach1.receiveShadow = true;
+    vach1.rotation.y = 0.03;
+    vach1.receiveShadow = true;
   this.mesh.add(vach1);
 
 
@@ -246,9 +254,9 @@ Box2 = function () {
     box2 = new Box2();
   
     // đặt vị trí phía dưới scene
-    box2.mesh.position.set(0, 350,0);
+    box2.mesh.position.set(32, 350,10);
     box2.mesh.rotation.y  = -Math.PI;
-  box2.mesh.rotation.x  = 0.5;
+  box2.mesh.rotation.x  = 0.58;
   box2.mesh.scale.set(0.7, 0.7, 0.7);
     // thêm lưới này vào scene1.5
     scene.add(box2.mesh);
