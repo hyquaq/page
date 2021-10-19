@@ -36,7 +36,7 @@ canvas {
 
 .flex {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 @import "header";
@@ -44,3 +44,7 @@ canvas {
 @import "scrollbar";
 @import "footer";
 @import "responsive-footer";
+
+// PC: >=1024px
+// Tablet: >=740px && <1024px
+// Mobile: <740px

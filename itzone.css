@@ -87,17 +87,6 @@
     box-shadow: 0px -1px 10px #333;
   }
 
-  .menu a {
-    font-size: 110%;
-    padding: 10px 10px 0px 10px;
-    border-radius: 40%;
-  }
-  .menu a:hover {
-    opacity: 1 !important;
-    background-color: #0266a4;
-    color: rgb(250, 176, 176) !important;
-  }
-
   #wrapArrow {
     position: absolute;
     left: 25%;
