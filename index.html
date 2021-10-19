@@ -7,7 +7,17 @@
   <meta charset="utf-8" />
   <title>PROJECT</title>
 
-  <!-- khoa add1 start -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="3DAnimation/three.min.js"></script>
+  <script src="3DAnimation/colors.js"></script>
+  <script src="3DAnimation/init.js"></script>
+  <script src="3DAnimation/animation.js"></script>
+  <script src="3DAnimation/createHouse.js"></script>
+  <script src="3DAnimation/createLight.js"></script>
+  <script src="3DAnimation/createScene.js"></script>
+  <script src="3DAnimation/lockcamera.js"></script>
+  <script src="3DAnimation/createbox.js"></script>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +33,6 @@
 
   <!-- khoa add1 end -->
 
-
   <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -31,96 +40,130 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
-
   <!-- link icon  -->
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
 
   <!-- link icon title -->
   <link rel="icon"
     href="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.6435-9/243579013_1933903830109375_6970616131069763051_n.jpg?_nc_cat=101&_nc_rgb565=1&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=pd3CtF1t0J8AX8nbPIr&_nc_ht=scontent.fdad3-4.fna&oh=f242b53c95aa8839c2db1196b758f1e9&oe=6192340E"
-    type="image/x-icon">
-    <!-- khoa -->
-    <link rel="stylesheet" href="./itzone.css" />
-    <!-- link css by Huy -->
-    <link rel="stylesheet" href="styles/render.css" type="text/css" />
-
-
+    type="image/x-icon" />
+  <!-- khoa -->
+  <link rel="stylesheet" href="styles/trangchu.css" />
   <!-- link css by Huy -->
   <link rel="stylesheet" href="styles/render.css" type="text/css" />
- <!-- khoa -->
- <link rel="stylesheet" href="./itzone.css" />
+
 
   <!-- link css thong tin -->
-  <link rel="stylesheet" href="styles/thongtin.css" type="text/css">
+  <link rel="stylesheet" href="styles/thongtin.css" type="text/css" />
 
   <style>
     .item {
       background-color: red;
     }
+    
+    <-- .bold:hove ben duoi khong co su dung hien tai -->
+    .bold:hover {
+      font-weight: bold;
+    }
   </style>
-  
+
   <!-- link by thong -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma" />
 </head>
 
 <body>
+
+  <!-- box -->
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSddi9ueljSGiP63-P_jegIxjtmiWPoGw5zuJTg1YdQ7sLT-rQ/viewform?usp=sf_link"
+    target="_blank" class="pop-up">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_ngcc8k8v.json" background="transparent" speed="1"
+      style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+  </a>
+
   <!-- header -->
   <header class="transparent">
-      <div class="khoiheader"></div>
+    <!-- <div class="khoiheader"></div> -->
     <div class="container">
-
       <!-- logo -->
       <a class="logo" href="#trang-chu">
         <img src="./images/logo.png" alt="logo" />
       </a>
 
       <!-- menu -->
-      <div class="menu" style="margin-left: 32px;">
+      <div class="menu">
         <a href="#trang-chu" class="flex">
           <i class="bx bx-home-alt"></i>
-          <p>
-            Trang chủ</p>
+          <span>Trang chủ</span>
         </a>
         <a href=" #hoat-dong" class="flex">
-          <i class="bx bx-code-alt"></i>
-          <p>
-            Hoạt động</p>
+          <i class="bx bx-calendar"></i>
+          <span>Hoạt động</span>
         </a>
         <a href="#thong-bao" class="flex">
           <i class="bx bx-bell"></i>
-          <p>
-            Thông báo</p>
+          <span>Thông báo</span>
         </a>
         <a href="#lien-he" class="flex">
           <i class="bx bx-conversation"></i>
-          <p>
-            Liên hệ</p>
+          <span>Liên hệ</span>
         </a>
       </div>
 
       <!-- hamburger -->
       <div class="hamburger">
-        <i class="bx bx-menu"></i>
+        <i class="open bx bx-menu"></i>
+        <i class="close bx bx-x"></i>
       </div>
     </div>
 
     <div class="close-menu"></div>
-
   </header>
-
 
   <!-- 1 section lon bao ngoai ben trong la nhieu section nho 1 section la 1 chu de -->
   <section class="body">
     <!-- section trang chủ -->
-    <section id="trang-chu" style="height: 100vh">
+    <section class="section" id="trang-chu" style="height: 100vh">
       <!-- khoa add2 start replace-->
 
       <div id="intro">
         <div id="chaomung">
           <div>Welcome to ITzone club!</div>
+        </div>
+
+        <div id="wrapArrow">
+          <div id="arrowAnim">
+            <div class="arrowSliding">
+              <div class="arrow"></div>
+            </div>
+            <div class="arrowSliding delay1">
+              <div class="arrow"></div>
+            </div>
+            <div class="arrowSliding delay2">
+              <div class="arrow"></div>
+            </div>
+            <div class="arrowSliding delay3">
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+        <div id="wrapArrow2">
+          <div id="arrowAnim">
+            <div class="arrowSliding">
+              <div class="arrow"></div>
+            </div>
+            <div class="arrowSliding delay1">
+              <div class="arrow"></div>
+            </div>
+            <div class="arrowSliding delay2">
+              <div class="arrow"></div>
+            </div>
+            <div class="arrowSliding delay3">
+              <div class="arrow"></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -128,13 +171,11 @@
     </section>
 
     <!-- section hoat dong-->
-    <section id="hoat-dong">
-      
+    <section class="section" id="hoat-dong" style="height: 750px">
       <div class="top">
         <h1>Hoạt động</h1>
       </div>
       <div class="bottom">
-
         <div class="incoming">
           <div id="imageAndGlass">
             <div class="glass"><p id="test">Sự kiện sắp diễn ra</p></div>
@@ -158,7 +199,7 @@
         <div class="recent">
           <div id="imageAndGlass">
             <div class="glass">Sự kiện gần đây</div>
-            <img src="./images/hoat-dong-2.jpg" alt="">
+            <img src="./images/hoat-dong-2.jpg" alt="" />
           </div>
           <div class="content">
             <div>ĐĂNG KÝ ỨNG TUYỂN THÀNH VIÊN CLB IT-ZONE 2021</div>
@@ -193,56 +234,61 @@
             </div>
         </div>
       </div>
-    
     </section>
 
     <!-- section thong bao -->
-    <section id="thong-bao" style="height: 100%">
-              <h1 style="text-align: center; font-size: 50px; padding: 20px; font-weight: bold;">THÔNG BÁO</h1>
-      <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
-                <!-- First Photo Grid-->
-                <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-                    <div class="w3-quarter">
-                        <img src="images/temp.png" alt="Sandwich" style="width:100%">
-                        <div class="container">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ ỨNG TUYỂN
-                THÀNH VIÊN CLB IT-ZONE 2021 <br>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</button>
-
+    <section class="section" id="thong-bao" style="height: 100%">
+      <h1 style="
+            text-align: center;
+            font-size: 50px;
+            padding: 20px;
+            font-weight: bold;
+          ">
+        Thông báo
+      </h1>
+      <div class="w3-main w3-content w3-padding" style="max-width: 1200px; margin-top: 48px">
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+          <div class="w3-quarter">
+                        <img src="images/IMG_202110_002.jpg" alt="THIẾT KẾ POSTER" style="width:100%">
+                        <div class="container" style="text-align: left;  padding: 0;">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="text-align: left;  padding: 0;" class="bold">CUỘC THI THIẾT KẾ POSTER MỪNG SINH NHẬT 5 TUỔI
+                                CLB ITZONE</button>
+                            <p>Nhằm tạo ra sân chơi cho các sinh viên có niềm đam mê với đồ hoạ và thiết kế.</p>
                             <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-xl">
                                     <div class="modal-content">
 
                                         <!-- Modal Header -->
                                         <div class="modal-header">
-                                            <h4 class="modal-title">ĐĂNG KÝ ỨNG TUYỂN THÀNH VIÊN CLB IT-ZONE 2021</h4>
+                                            <h4 class="modal-title">CUỘC THI THIẾT KẾ POSTER MỪNG SINH NHẬT 5 TUỔI CLB ITZONE
+                                            </h4>
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            —————————————————— MỤC TIÊU HOẠT ĐỘNG : - Nhằm xây dựng môi trường học tập và không gian học thuật dành riêng cho sinh viên quản lý. - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho
-                                            các bạn sinh viên trong Nhà Trường. QUYỀN LỢI : - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. - Khi tham gia câu lạc bộ
-                                            các bạn sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì
-                                            đã học được qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và
-                                            tác phong chuyên nghiệp. - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. - Được cộng
-                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng định
-                                            mình và giúp nhau cùng tiến bộ. HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: 👉Vòng 1: Điền form online và nộp CV -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy đủ thông tin vào form.
-                                            - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân 👉Vòng 2: Teamwork -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. -Các bạn đã điền form ở vòng 1 sẽ cùng
-                                            "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. Các bạn sẽ được chia vào các đội khác nhau để cùng xây dựng một dự
-                                            án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. 👉Vòng 3: ITZONE Test -🕘Thời gian: Từ 28/10/2021
-                                            và kết thúc trong cùng ngày. -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các câu hỏi về lĩnh vực công nghệ thông tin,
-                                            một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt kết quả cao các bạn nhé. 👉Vòng 4: Phỏng
-                                            vấn -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt động phỏng vấn, các bạn vui lòng đến trước thời gian
-                                            phỏng vấn khoảng 15p để ổn định. - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. Yêu cầu chung: - Có tâm và có tầm. - Có khả năng tìm kiếm trên Internet. - Có kỹ năng làm việc nhóm. - Yêu
-                                            thích công việc về Công nghệ thông tin (CNTT). - Sinh viên đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. - Thân thiện,
-                                            có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham học hỏi, sẵn sàng trao đổi và thảo luận. Yêu cầu team kỹ thuật: - Có kiến thức về sửa máy tính (chủ yếu là phần
-                                            mềm) là lợi thế. - Kỹ năng tự trao dồi kiến thức từ sách, báo, tạp chí, internet… Yêu cầu team truyền thông & sự kiện: - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một
-                                            lợi thế. - Biết cách quản lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. CÁC VỊ TRÍ ỨNG TUYỂN : Team kỹ thuật: + Hỗ trợ kỹ thuật, sửa chữa, cài
-                                            đặt phần mềm, tư trợ các vấn đề liên quan đến máy tính, công nghệ. + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông
-                                            tin. + Tham gia tổ chức các buổi Seminar. Team PR & sự kiện: + Chụp ảnh, viết bài đăng, làm poster. + Truyền thông cho các chương trình, sự kiện của CLB. + Lên ý tưởng, xây dựng
-                                            kế hoạch, tổ chức các chương trình, các hoạt động của IT-ZONE. —————————————————— LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA Thông tin chi tiết liên hệ: - Email: clbitzone@gmail.com
-                                            - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng —————————————————— Chân thành cảm ơn các bạn đã theo dõi bài viết CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
+                                            Cuộc thi Chúc mừng kỷ niệm sinh nhật 5 tuổi của IT-ZONE🎂🎂🎂<br> -------------------------------------------------------------------------------------
+                                            <br>🎨[ CUỘC THI THIẾT KẾ POSTER MỪNG SINH NHẬT 5 TUỔI IT-ZONE ]<br> IT-ZONE là câu lạc bộ học thuật trực thuộc CAIT – Trung tâm Công nghệ thông tin và Ứng dụng, trường Đại học Tôn Đức Thắng. Câu lạc bộ IT-ZONE
+                                            được thành lập với mục đích hỗ trợ tất cả cán bộ và sinh viên của trường về vấn đề liên quan đến IT. Đây cũng là nơi các sinh viên có niềm đam mê với công nghệ thông tin tìm đến để học tập và trau dồi thêm nhiều
+                                            kiến thức. Năm nay, nhân dịp sinh nhật của IT-ZONE được 5 tuổi, câu lạc bộ tổ chức cuộc thi “ Thiết kế poster mừng sinh nhật 5 tuổi IT-ZONE ” nhằm tạo ra sân chơi cho các sinh viên có niềm đam mê với đồ hoạ
+                                            và thiết kế. Hãy tham gia cùng IT-ZONE để tạo ra sản phẩm khác biệt của riêng bạn nhé!<br> --------------------------------------------------------------------------------------
+                                            <br> ⚡️Thông tin cuộc thi:<br> 👉 Đối tượng tham gia: Tất cả sinh viên TDTU
+                                            <br>👉 Cách thức tham gia: <br>- Bước 1: Like fanpage IT-ZONE – Trường Đại học Tôn Đức Thắng <a href="https://www.facebook.com/caitzone/photos/?ref=page_internal" target="_blank" style="color:blue">
+                                                https://www.facebook.com/caitzone/photos/?ref=page_internal</a> <br> - Bước 2: Like, share bài viết này ở chế độ công khai và tag 3 chiến hữu cùng tham gia.<br> - Bước 3: Nộp bài về BTC đúng thời gian quy
+                                            định tại: <a href="https://docs.google.com/forms/d/e/1FAIpQLSddi9ueljSGiP63-P_jegIxjtmiWPoGw5zuJTg1YdQ7sLT-rQ/viewform?usp=sf_link" target="_blank"  style="color:blue">https://docs.google.com/forms/d/e/1FAIpQLSddi9ueljSGiP63-P_jegIxjtmiWPoGw5zuJTg1YdQ7sLT-rQ/viewform?usp=sf_link</a>
+                                            <br>⚡️ File bài dự thi đặt tên theo cú pháp: TENSINHVIEN_MSSV <br>👉 Thời gian diễn ra cuộc thi <br>+ Giai đoạn 1 (diễn ra từ ngày 2/11/2021-5/11/2021): Đăng kí tham gia và nộp bài thi về cho BTC.<br> + Giai
+                                            đoạn 2 (diễn ra từ ngày 6/11/2021-8/11/2021): BTC sẽ đăng các bài dự thi theo thứ tự để mọi người bình chọn cho bài thi mà mình yêu thích nhất.<br> 👉 Cách tính điểm bình chọn: <br>+ Đối với 1 lượt LIKE : 1
+                                            điểm
+                                            <br> + Đối với 1 lượt TIM : 2 điểm<br> + Đối với 1 lượt SHARE : 3 điểm<br> 👉 Cách thức tính điểm:
+                                            <br>+ 50% sẽ do số lượt bình chọn<br> + 50% còn lại sẽ do BTC chấm điểm dựa trên yếu tố sáng tạo và thẩm mỹ<br> 🏆 Quyền lợi khi tham gia:<br> + Top 3 sinh viên có điểm cao sẽ được trao giải thưởng: <br>- Giải
+                                            nhất : 150.000 VNĐ <br>- Giải nhì : 100.000 VNĐ <br>- Giải ba : 50.000 VNĐ<br> KẾT QUẢ SẼ ĐƯỢC CÔNG BỐ NGÀY 11/11/2021 TRONG BUỔI LIVE STREAM MỪNG SINH NHẬT 5 TUỔI ITZONE<br> + Đối với những sinh viên tham gia
+                                            nộp bài sẽ được ghi nhận ngoại khoá theo quy chế của nhà trường vào HKI niên khoá 2021-2022.<br> -----------------------------------------------------------------------------------------
+                                            <br> Mọi thông tin chi tiết xin liên hệ:<br> Fanpage: www.facebook.com/caitzone/ Group: https://facebook.com/groups/ITZONESupportSharing/<br> Email: clbitzone@gmail.com
+                                            <br> ---------------------------------------------------------------------------------
+                                            <br>
+                                            <br> CLB IT-ZONE – Có tâm & Có Tầm – Sẻ chia & Hỗ trợ
+
                                         </div>
 
                                         <!-- Modal footer -->
@@ -257,10 +303,47 @@
                         </div>
                     </div>
                     <div class="w3-quarter">
-                        <img src="images/temp.png" alt="Sandwich" style="width:100%">
-                        <div class="container">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ ỨNG TUYỂN
-                THÀNH VIÊN CLB IT-ZONE 2021</button>
+                        <img src="images/IMG_202110_001.jpg" alt="NGƯNG NHẬN BIỂU MẪU" style="width:100%">
+                        <div class="container" style="text-align: left;  padding: 0;">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="text-align: left;  padding: 0;" class="bold">THÔNG BÁO TỚI HẠN NGƯNG NHẬN BIỂU MẪU</button>
+                            <p>Form biểu mẫu Ứng tuyển Vòng 1 của IT-Zone sẽ đóng lại trong ít phút tới.</p>
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">THÔNG BÁO TỚI HẠN NGƯNG NHẬN BIỂU MẪU</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            THÔNG BÁO TỚI HẠN NGƯNG NHẬN BIỂU MẪU !!! <br> IT-Zone thông báo tới GEN 5, Form nhận biểu mẫu Ứng tuyển Vòng 1 của IT-Zone đã đến hạn và phải đóng lại trong ít phút tới - vào 23h59 ngày 11/10. <br>Cảm ơn tất
+                                            cả các bạn đã dành tình cảm cho IT-Zone, chắc hẳn các bạn đang rất nôn nóng để được gặp gỡ các anh chị và bắt đầu những thử thách đầy thú vị sắp tới!
+                                            <br> Hãy giữ bản thân luôn “Online”, kết nối tới FanPage IT-Zone - Trường Đại học Tôn Đức Thắng, và ghi nhớ thói quen vàng “Check mail mỗi ngày” để nhận những thông báo mới nhất!<br> Mọi thắc mắc vui lòng liên
+                                            hệ: <br>- Email: clbitzone@gmail.com<br> - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng <br>—————————————————— <br>Chân thành cảm ơn các bạn đã theo dõi bài viết<br> CLB IT-ZONE - Có tâm & có tầm
+                                            - Sẻ chia & hỗ trợ
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w3-quarter">
+                        <img src="images/IMG_202110_105.jpg" alt="TUYỂN THÀNH VIÊN CLB IT-ZONE" style="width:100%">
+                        <div class="container" style="text-align: left;  padding: 0;">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="text-align: left; padding: 0;" class="bold">ĐĂNG KÝ ỨNG
+                                TUYỂN
+                                THÀNH VIÊN CLB IT-ZONE 2021</button>
                             <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
                             <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-xl">
@@ -274,28 +357,158 @@
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            —————————————————— MỤC TIÊU HOẠT ĐỘNG : - Nhằm xây dựng môi trường học tập và không gian học thuật dành riêng cho sinh viên quản lý. - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho
-                                            các bạn sinh viên trong Nhà Trường. QUYỀN LỢI : - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. - Khi tham gia câu lạc bộ
-                                            các bạn sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì
-                                            đã học được qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và
-                                            tác phong chuyên nghiệp. - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. - Được cộng
-                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng định
-                                            mình và giúp nhau cùng tiến bộ. HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: 👉Vòng 1: Điền form online và nộp CV -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy đủ thông tin vào form.
-                                            - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân 👉Vòng 2: Teamwork -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. -Các bạn đã điền form ở vòng 1 sẽ cùng
-                                            "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. Các bạn sẽ được chia vào các đội khác nhau để cùng xây dựng một dự
-                                            án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. 👉Vòng 3: ITZONE Test -🕘Thời gian: Từ 28/10/2021
-                                            và kết thúc trong cùng ngày. -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các câu hỏi về lĩnh vực công nghệ thông tin,
-                                            một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt kết quả cao các bạn nhé. 👉Vòng 4: Phỏng
-                                            vấn -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt động phỏng vấn, các bạn vui lòng đến trước thời gian
-                                            phỏng vấn khoảng 15p để ổn định. - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. Yêu cầu chung: - Có tâm và có tầm. - Có khả năng tìm kiếm trên Internet. - Có kỹ năng làm việc nhóm. - Yêu
-                                            thích công việc về Công nghệ thông tin (CNTT). - Sinh viên đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. - Thân thiện,
-                                            có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham học hỏi, sẵn sàng trao đổi và thảo luận. Yêu cầu team kỹ thuật: - Có kiến thức về sửa máy tính (chủ yếu là phần
-                                            mềm) là lợi thế. - Kỹ năng tự trao dồi kiến thức từ sách, báo, tạp chí, internet… Yêu cầu team truyền thông & sự kiện: - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một
-                                            lợi thế. - Biết cách quản lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. CÁC VỊ TRÍ ỨNG TUYỂN : Team kỹ thuật: + Hỗ trợ kỹ thuật, sửa chữa, cài
-                                            đặt phần mềm, tư trợ các vấn đề liên quan đến máy tính, công nghệ. + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông
-                                            tin. + Tham gia tổ chức các buổi Seminar. Team PR & sự kiện: + Chụp ảnh, viết bài đăng, làm poster. + Truyền thông cho các chương trình, sự kiện của CLB. + Lên ý tưởng, xây dựng
-                                            kế hoạch, tổ chức các chương trình, các hoạt động của IT-ZONE. —————————————————— LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA Thông tin chi tiết liên hệ: - Email: clbitzone@gmail.com
-                                            - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng —————————————————— Chân thành cảm ơn các bạn đã theo dõi bài viết CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
+                                            —————————————————— <br>Xin chào các bạn sinh viên TDTU 👋👋 <br> IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới. <br> MỤC TIÊU HOẠT ĐỘNG : <br> - Nhằm xây dựng môi trường
+                                            học tập và không gian học thuật dành riêng cho sinh viên quản lý. <br> - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong
+                                            Nhà Trường. <br> QUYỀN LỢI : <br> - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. <br> - Khi tham gia câu lạc bộ các bạn
+                                            sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì đã học được
+                                            qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. <br> - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và tác phong
+                                            chuyên nghiệp. <br> - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. <br> - Được cộng
+                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. <br> - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng
+                                            định mình và giúp nhau cùng tiến bộ. <br> HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: <br> 👉Vòng 1: Điền form online và nộp CV <br> -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy
+                                            đủ thông tin vào form.
+                                            <br> - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân <br> 👉Vòng 2: Teamwork <br> -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. <br> -Các bạn đã điền
+                                            form ở vòng 1 sẽ cùng "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. <br> Các bạn sẽ được chia vào các đội khác nhau
+                                            để cùng xây dựng một dự án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. <br> 👉Vòng 3: ITZONE
+                                            Test <br> -🕘Thời gian: Từ 28/10/2021 và kết thúc trong cùng ngày. <br> -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các
+                                            câu hỏi về lĩnh vực công nghệ thông tin, một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt
+                                            kết quả cao các bạn nhé. <br> 👉Vòng 4: Phỏng vấn <br> -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. <br> - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt
+                                            động phỏng vấn, các bạn vui lòng đến trước thời gian phỏng vấn khoảng 15p để ổn định.
+                                            <br> - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. <br> Yêu cầu chung:
+                                            <br> - Có tâm và có tầm. <br> - Có khả năng tìm kiếm trên Internet. <br> - Có kỹ năng làm việc nhóm. <br> - Yêu thích công việc về Công nghệ thông tin (CNTT). <br> - Sinh viên
+                                            đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. <br> - Thân thiện, có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham
+                                            học hỏi, sẵn sàng trao đổi và thảo luận. <br> Yêu cầu team kỹ thuật: <br> - Có kiến thức về sửa máy tính (chủ yếu là phần mềm) là lợi thế. <br> - Kỹ năng tự trao dồi
+                                            kiến thức từ sách, báo, tạp chí, internet… <br> Yêu cầu team truyền thông & sự kiện: <br> - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một lợi thế. <br> - Biết cách quản
+                                            lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. <br> CÁC VỊ TRÍ ỨNG TUYỂN :- <br> Team kỹ thuật: <br> + Hỗ trợ kỹ thuật, sửa chữa, cài đặt phần mềm,
+                                            tư trợ các vấn đề liên quan đến máy tính, công nghệ.
+                                            <br> + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông tin. <br> + Tham gia tổ chức các buổi Seminar. <br> Team PR & sự kiện: <br>                                            + Chụp ảnh, viết bài đăng, làm poster. <br> + Truyền thông cho các chương trình, sự kiện của CLB.<br> + Lên ý tưởng, xây dựng kế hoạch, tổ chức các chương trình, các hoạt
+                                            động của IT-ZONE.<br> ——————————————————<br> LINK đăng ký:
+                                            <a href="https://forms.gle/CsPca2ZVmWRhoyCJA" target="_blank"  style="color: blue;">https://forms.gle/CsPca2ZVmWRhoyCJA</a><br> Thông tin chi tiết liên hệ: <br>- Email: clbitzone@gmail.com<br> - Fanpage: IT-Zone - Trường
+                                            ĐH Tôn Đức Thắng<br> ——————————————————<br> Chân thành cảm ơn các bạn đã theo dõi bài viết
+                                            <br>CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w3-quarter">
+                        <img src="images/IMG_202110_105.jpg" alt="TUYỂN THÀNH VIÊN CLB IT-ZONE" style="width:100%">
+                        <div class="container" style="text-align: left;  padding: 0;">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="text-align: left; padding: 0;" class="bold">ĐĂNG KÝ ỨNG
+                                TUYỂN
+                                THÀNH VIÊN CLB IT-ZONE 2021</button>
+                            <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">ĐĂNG KÝ ỨNG TUYỂN THÀNH VIÊN CLB IT-ZONE 2021</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            —————————————————— <br>Xin chào các bạn sinh viên TDTU 👋👋 <br> IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới. <br> MỤC TIÊU HOẠT ĐỘNG : <br> - Nhằm xây dựng môi trường
+                                            học tập và không gian học thuật dành riêng cho sinh viên quản lý. <br> - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong
+                                            Nhà Trường. <br> QUYỀN LỢI : <br> - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. <br> - Khi tham gia câu lạc bộ các bạn
+                                            sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì đã học được
+                                            qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. <br> - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và tác phong
+                                            chuyên nghiệp. <br> - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. <br> - Được cộng
+                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. <br> - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng
+                                            định mình và giúp nhau cùng tiến bộ. <br> HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: <br> 👉Vòng 1: Điền form online và nộp CV <br> -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy
+                                            đủ thông tin vào form.
+                                            <br> - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân <br> 👉Vòng 2: Teamwork <br> -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. <br> -Các bạn đã điền
+                                            form ở vòng 1 sẽ cùng "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. <br> Các bạn sẽ được chia vào các đội khác nhau
+                                            để cùng xây dựng một dự án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. <br> 👉Vòng 3: ITZONE
+                                            Test <br> -🕘Thời gian: Từ 28/10/2021 và kết thúc trong cùng ngày. <br> -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các
+                                            câu hỏi về lĩnh vực công nghệ thông tin, một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt
+                                            kết quả cao các bạn nhé. <br> 👉Vòng 4: Phỏng vấn <br> -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. <br> - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt
+                                            động phỏng vấn, các bạn vui lòng đến trước thời gian phỏng vấn khoảng 15p để ổn định.
+                                            <br> - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. <br> Yêu cầu chung:
+                                            <br> - Có tâm và có tầm. <br> - Có khả năng tìm kiếm trên Internet. <br> - Có kỹ năng làm việc nhóm. <br> - Yêu thích công việc về Công nghệ thông tin (CNTT). <br> - Sinh viên
+                                            đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. <br> - Thân thiện, có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham
+                                            học hỏi, sẵn sàng trao đổi và thảo luận. <br> Yêu cầu team kỹ thuật: <br> - Có kiến thức về sửa máy tính (chủ yếu là phần mềm) là lợi thế. <br> - Kỹ năng tự trao dồi
+                                            kiến thức từ sách, báo, tạp chí, internet… <br> Yêu cầu team truyền thông & sự kiện: <br> - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một lợi thế. <br> - Biết cách quản
+                                            lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. <br> CÁC VỊ TRÍ ỨNG TUYỂN :- <br> Team kỹ thuật: <br> + Hỗ trợ kỹ thuật, sửa chữa, cài đặt phần mềm,
+                                            tư trợ các vấn đề liên quan đến máy tính, công nghệ.
+                                            <br> + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông tin. <br> + Tham gia tổ chức các buổi Seminar. <br> Team PR & sự kiện: <br>                                            + Chụp ảnh, viết bài đăng, làm poster. <br> + Truyền thông cho các chương trình, sự kiện của CLB.<br> + Lên ý tưởng, xây dựng kế hoạch, tổ chức các chương trình, các hoạt
+                                            động của IT-ZONE.<br> ——————————————————<br> LINK đăng ký:
+                                            <a href="https://forms.gle/CsPca2ZVmWRhoyCJA" style="color: blue;">https://forms.gle/CsPca2ZVmWRhoyCJA</a><br> Thông tin chi tiết liên hệ: <br>- Email: clbitzone@gmail.com<br> - Fanpage: IT-Zone - Trường
+                                            ĐH Tôn Đức Thắng<br> ——————————————————<br> Chân thành cảm ơn các bạn đã theo dõi bài viết
+                                            <br>CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Second Photo Grid-->
+                    <div class="w3-quarter">
+                        <img src="images/IMG_202110_105.jpg" alt="TUYỂN THÀNH VIÊN CLB IT-ZONE" style="width:100%">
+                        <div class="container" style="text-align: left;  padding: 0;">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="text-align: left; padding: 0;" class="bold">ĐĂNG KÝ ỨNG
+                                TUYỂN
+                                THÀNH VIÊN CLB IT-ZONE 2021</button>
+                            <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">ĐĂNG KÝ ỨNG TUYỂN THÀNH VIÊN CLB IT-ZONE 2021</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            —————————————————— <br>Xin chào các bạn sinh viên TDTU 👋👋 <br> IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới. <br> MỤC TIÊU HOẠT ĐỘNG : <br> - Nhằm xây dựng môi trường
+                                            học tập và không gian học thuật dành riêng cho sinh viên quản lý. <br> - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong
+                                            Nhà Trường. <br> QUYỀN LỢI : <br> - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. <br> - Khi tham gia câu lạc bộ các bạn
+                                            sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì đã học được
+                                            qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. <br> - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và tác phong
+                                            chuyên nghiệp. <br> - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. <br> - Được cộng
+                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. <br> - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng
+                                            định mình và giúp nhau cùng tiến bộ. <br> HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: <br> 👉Vòng 1: Điền form online và nộp CV <br> -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy
+                                            đủ thông tin vào form.
+                                            <br> - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân <br> 👉Vòng 2: Teamwork <br> -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. <br> -Các bạn đã điền
+                                            form ở vòng 1 sẽ cùng "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. <br> Các bạn sẽ được chia vào các đội khác nhau
+                                            để cùng xây dựng một dự án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. <br> 👉Vòng 3: ITZONE
+                                            Test <br> -🕘Thời gian: Từ 28/10/2021 và kết thúc trong cùng ngày. <br> -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các
+                                            câu hỏi về lĩnh vực công nghệ thông tin, một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt
+                                            kết quả cao các bạn nhé. <br> 👉Vòng 4: Phỏng vấn <br> -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. <br> - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt
+                                            động phỏng vấn, các bạn vui lòng đến trước thời gian phỏng vấn khoảng 15p để ổn định.
+                                            <br> - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. <br> Yêu cầu chung:
+                                            <br> - Có tâm và có tầm. <br> - Có khả năng tìm kiếm trên Internet. <br> - Có kỹ năng làm việc nhóm. <br> - Yêu thích công việc về Công nghệ thông tin (CNTT). <br> - Sinh viên
+                                            đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. <br> - Thân thiện, có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham
+                                            học hỏi, sẵn sàng trao đổi và thảo luận. <br> Yêu cầu team kỹ thuật: <br> - Có kiến thức về sửa máy tính (chủ yếu là phần mềm) là lợi thế. <br> - Kỹ năng tự trao dồi
+                                            kiến thức từ sách, báo, tạp chí, internet… <br> Yêu cầu team truyền thông & sự kiện: <br> - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một lợi thế. <br> - Biết cách quản
+                                            lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. <br> CÁC VỊ TRÍ ỨNG TUYỂN :- <br> Team kỹ thuật: <br> + Hỗ trợ kỹ thuật, sửa chữa, cài đặt phần mềm,
+                                            tư trợ các vấn đề liên quan đến máy tính, công nghệ.
+                                            <br> + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông tin. <br> + Tham gia tổ chức các buổi Seminar. <br> Team PR & sự kiện: <br>                                            + Chụp ảnh, viết bài đăng, làm poster. <br> + Truyền thông cho các chương trình, sự kiện của CLB.<br> + Lên ý tưởng, xây dựng kế hoạch, tổ chức các chương trình, các hoạt
+                                            động của IT-ZONE.<br> ——————————————————<br> LINK đăng ký:
+                                            <a href="https://forms.gle/CsPca2ZVmWRhoyCJA" style="color: blue;">https://forms.gle/CsPca2ZVmWRhoyCJA</a><br> Thông tin chi tiết liên hệ: <br>- Email: clbitzone@gmail.com<br> - Fanpage: IT-Zone - Trường
+                                            ĐH Tôn Đức Thắng<br> ——————————————————<br> Chân thành cảm ơn các bạn đã theo dõi bài viết
+                                            <br>CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
                                         </div>
 
                                         <!-- Modal footer -->
@@ -310,10 +523,11 @@
                         </div>
                     </div>
                     <div class="w3-quarter">
-                        <img src="images/temp.png" alt="Sandwich" style="width:100%">
-                        <div class="container">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ ỨNG TUYỂN
-                THÀNH VIÊN CLB IT-ZONE 2021</button>
+                        <img src="images/IMG_202110_105.jpg" alt="TUYỂN THÀNH VIÊN CLB IT-ZONE" style="width:100%">
+                        <div class="container" style="text-align: left;  padding: 0;">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="text-align: left; padding: 0;" class="bold">ĐĂNG KÝ ỨNG
+                                TUYỂN
+                                THÀNH VIÊN CLB IT-ZONE 2021</button>
                             <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
                             <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-xl">
@@ -327,28 +541,34 @@
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            —————————————————— MỤC TIÊU HOẠT ĐỘNG : - Nhằm xây dựng môi trường học tập và không gian học thuật dành riêng cho sinh viên quản lý. - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho
-                                            các bạn sinh viên trong Nhà Trường. QUYỀN LỢI : - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. - Khi tham gia câu lạc bộ
-                                            các bạn sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì
-                                            đã học được qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và
-                                            tác phong chuyên nghiệp. - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. - Được cộng
-                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng định
-                                            mình và giúp nhau cùng tiến bộ. HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: 👉Vòng 1: Điền form online và nộp CV -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy đủ thông tin vào form.
-                                            - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân 👉Vòng 2: Teamwork -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. -Các bạn đã điền form ở vòng 1 sẽ cùng
-                                            "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. Các bạn sẽ được chia vào các đội khác nhau để cùng xây dựng một dự
-                                            án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. 👉Vòng 3: ITZONE Test -🕘Thời gian: Từ 28/10/2021
-                                            và kết thúc trong cùng ngày. -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các câu hỏi về lĩnh vực công nghệ thông tin,
-                                            một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt kết quả cao các bạn nhé. 👉Vòng 4: Phỏng
-                                            vấn -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt động phỏng vấn, các bạn vui lòng đến trước thời gian
-                                            phỏng vấn khoảng 15p để ổn định. - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. Yêu cầu chung: - Có tâm và có tầm. - Có khả năng tìm kiếm trên Internet. - Có kỹ năng làm việc nhóm. - Yêu
-                                            thích công việc về Công nghệ thông tin (CNTT). - Sinh viên đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. - Thân thiện,
-                                            có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham học hỏi, sẵn sàng trao đổi và thảo luận. Yêu cầu team kỹ thuật: - Có kiến thức về sửa máy tính (chủ yếu là phần
-                                            mềm) là lợi thế. - Kỹ năng tự trao dồi kiến thức từ sách, báo, tạp chí, internet… Yêu cầu team truyền thông & sự kiện: - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một
-                                            lợi thế. - Biết cách quản lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. CÁC VỊ TRÍ ỨNG TUYỂN : Team kỹ thuật: + Hỗ trợ kỹ thuật, sửa chữa, cài
-                                            đặt phần mềm, tư trợ các vấn đề liên quan đến máy tính, công nghệ. + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông
-                                            tin. + Tham gia tổ chức các buổi Seminar. Team PR & sự kiện: + Chụp ảnh, viết bài đăng, làm poster. + Truyền thông cho các chương trình, sự kiện của CLB. + Lên ý tưởng, xây dựng
-                                            kế hoạch, tổ chức các chương trình, các hoạt động của IT-ZONE. —————————————————— LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA Thông tin chi tiết liên hệ: - Email: clbitzone@gmail.com
-                                            - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng —————————————————— Chân thành cảm ơn các bạn đã theo dõi bài viết CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
+                                            —————————————————— <br>Xin chào các bạn sinh viên TDTU 👋👋 <br> IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới. <br> MỤC TIÊU HOẠT ĐỘNG : <br> - Nhằm xây dựng môi trường
+                                            học tập và không gian học thuật dành riêng cho sinh viên quản lý. <br> - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong
+                                            Nhà Trường. <br> QUYỀN LỢI : <br> - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. <br> - Khi tham gia câu lạc bộ các bạn
+                                            sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì đã học được
+                                            qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. <br> - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và tác phong
+                                            chuyên nghiệp. <br> - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. <br> - Được cộng
+                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. <br> - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng
+                                            định mình và giúp nhau cùng tiến bộ. <br> HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: <br> 👉Vòng 1: Điền form online và nộp CV <br> -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy
+                                            đủ thông tin vào form.
+                                            <br> - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân <br> 👉Vòng 2: Teamwork <br> -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. <br> -Các bạn đã điền
+                                            form ở vòng 1 sẽ cùng "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. <br> Các bạn sẽ được chia vào các đội khác nhau
+                                            để cùng xây dựng một dự án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. <br> 👉Vòng 3: ITZONE
+                                            Test <br> -🕘Thời gian: Từ 28/10/2021 và kết thúc trong cùng ngày. <br> -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các
+                                            câu hỏi về lĩnh vực công nghệ thông tin, một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt
+                                            kết quả cao các bạn nhé. <br> 👉Vòng 4: Phỏng vấn <br> -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. <br> - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt
+                                            động phỏng vấn, các bạn vui lòng đến trước thời gian phỏng vấn khoảng 15p để ổn định.
+                                            <br> - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. <br> Yêu cầu chung:
+                                            <br> - Có tâm và có tầm. <br> - Có khả năng tìm kiếm trên Internet. <br> - Có kỹ năng làm việc nhóm. <br> - Yêu thích công việc về Công nghệ thông tin (CNTT). <br> - Sinh viên
+                                            đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. <br> - Thân thiện, có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham
+                                            học hỏi, sẵn sàng trao đổi và thảo luận. <br> Yêu cầu team kỹ thuật: <br> - Có kiến thức về sửa máy tính (chủ yếu là phần mềm) là lợi thế. <br> - Kỹ năng tự trao dồi
+                                            kiến thức từ sách, báo, tạp chí, internet… <br> Yêu cầu team truyền thông & sự kiện: <br> - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một lợi thế. <br> - Biết cách quản
+                                            lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. <br> CÁC VỊ TRÍ ỨNG TUYỂN :- <br> Team kỹ thuật: <br> + Hỗ trợ kỹ thuật, sửa chữa, cài đặt phần mềm,
+                                            tư trợ các vấn đề liên quan đến máy tính, công nghệ.
+                                            <br> + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông tin. <br> + Tham gia tổ chức các buổi Seminar. <br> Team PR & sự kiện: <br>                                            + Chụp ảnh, viết bài đăng, làm poster. <br> + Truyền thông cho các chương trình, sự kiện của CLB.<br> + Lên ý tưởng, xây dựng kế hoạch, tổ chức các chương trình, các hoạt
+                                            động của IT-ZONE.<br> ——————————————————<br> LINK đăng ký:
+                                            <a href="https://forms.gle/CsPca2ZVmWRhoyCJA" style="color: blue;">https://forms.gle/CsPca2ZVmWRhoyCJA</a><br> Thông tin chi tiết liên hệ: <br>- Email: clbitzone@gmail.com<br> - Fanpage: IT-Zone - Trường
+                                            ĐH Tôn Đức Thắng<br> ——————————————————<br> Chân thành cảm ơn các bạn đã theo dõi bài viết
+                                            <br>CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
                                         </div>
 
                                         <!-- Modal footer -->
@@ -363,10 +583,11 @@
                         </div>
                     </div>
                     <div class="w3-quarter">
-                        <img src="images/temp.png" alt="Sandwich" style="width:100%">
-                        <div class="container">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ ỨNG TUYỂN
-                THÀNH VIÊN CLB IT-ZONE 2021</button>
+                        <img src="images/IMG_202110_105.jpg" alt="TUYỂN THÀNH VIÊN CLB IT-ZONE" style="width:100%">
+                        <div class="container" style="text-align: left;  padding: 0;">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="text-align: left; padding: 0;" class="bold">ĐĂNG KÝ ỨNG
+                                TUYỂN
+                                THÀNH VIÊN CLB IT-ZONE 2021</button>
                             <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
                             <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-xl">
@@ -380,85 +601,34 @@
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            —————————————————— MỤC TIÊU HOẠT ĐỘNG : - Nhằm xây dựng môi trường học tập và không gian học thuật dành riêng cho sinh viên quản lý. - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho
-                                            các bạn sinh viên trong Nhà Trường. QUYỀN LỢI : - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. - Khi tham gia câu lạc bộ
-                                            các bạn sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì
-                                            đã học được qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và
-                                            tác phong chuyên nghiệp. - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. - Được cộng
-                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng định
-                                            mình và giúp nhau cùng tiến bộ. HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: 👉Vòng 1: Điền form online và nộp CV -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy đủ thông tin vào form.
-                                            - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân 👉Vòng 2: Teamwork -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. -Các bạn đã điền form ở vòng 1 sẽ cùng
-                                            "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. Các bạn sẽ được chia vào các đội khác nhau để cùng xây dựng một dự
-                                            án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. 👉Vòng 3: ITZONE Test -🕘Thời gian: Từ 28/10/2021
-                                            và kết thúc trong cùng ngày. -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các câu hỏi về lĩnh vực công nghệ thông tin,
-                                            một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt kết quả cao các bạn nhé. 👉Vòng 4: Phỏng
-                                            vấn -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt động phỏng vấn, các bạn vui lòng đến trước thời gian
-                                            phỏng vấn khoảng 15p để ổn định. - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. Yêu cầu chung: - Có tâm và có tầm. - Có khả năng tìm kiếm trên Internet. - Có kỹ năng làm việc nhóm. - Yêu
-                                            thích công việc về Công nghệ thông tin (CNTT). - Sinh viên đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. - Thân thiện,
-                                            có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham học hỏi, sẵn sàng trao đổi và thảo luận. Yêu cầu team kỹ thuật: - Có kiến thức về sửa máy tính (chủ yếu là phần
-                                            mềm) là lợi thế. - Kỹ năng tự trao dồi kiến thức từ sách, báo, tạp chí, internet… Yêu cầu team truyền thông & sự kiện: - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một
-                                            lợi thế. - Biết cách quản lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. CÁC VỊ TRÍ ỨNG TUYỂN : Team kỹ thuật: + Hỗ trợ kỹ thuật, sửa chữa, cài
-                                            đặt phần mềm, tư trợ các vấn đề liên quan đến máy tính, công nghệ. + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông
-                                            tin. + Tham gia tổ chức các buổi Seminar. Team PR & sự kiện: + Chụp ảnh, viết bài đăng, làm poster. + Truyền thông cho các chương trình, sự kiện của CLB. + Lên ý tưởng, xây dựng
-                                            kế hoạch, tổ chức các chương trình, các hoạt động của IT-ZONE. —————————————————— LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA Thông tin chi tiết liên hệ: - Email: clbitzone@gmail.com
-                                            - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng —————————————————— Chân thành cảm ơn các bạn đã theo dõi bài viết CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Second Photo Grid-->
-                <div class="w3-row-padding w3-padding-16 w3-center">
-                    <div class="w3-quarter">
-                        <img src="images/temp.png" alt="Sandwich" style="width:100%">
-                        <div class="container">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ ỨNG TUYỂN
-                THÀNH VIÊN CLB IT-ZONE 2021</button>
-                            <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
-                            <div class="modal fade" id="myModal">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content">
-
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">ĐĂNG KÝ ỨNG TUYỂN THÀNH VIÊN CLB IT-ZONE 2021</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            —————————————————— MỤC TIÊU HOẠT ĐỘNG : - Nhằm xây dựng môi trường học tập và không gian học thuật dành riêng cho sinh viên quản lý. - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho
-                                            các bạn sinh viên trong Nhà Trường. QUYỀN LỢI : - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. - Khi tham gia câu lạc bộ
-                                            các bạn sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì
-                                            đã học được qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và
-                                            tác phong chuyên nghiệp. - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. - Được cộng
-                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng định
-                                            mình và giúp nhau cùng tiến bộ. HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: 👉Vòng 1: Điền form online và nộp CV -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy đủ thông tin vào form.
-                                            - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân 👉Vòng 2: Teamwork -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. -Các bạn đã điền form ở vòng 1 sẽ cùng
-                                            "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. Các bạn sẽ được chia vào các đội khác nhau để cùng xây dựng một dự
-                                            án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. 👉Vòng 3: ITZONE Test -🕘Thời gian: Từ 28/10/2021
-                                            và kết thúc trong cùng ngày. -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các câu hỏi về lĩnh vực công nghệ thông tin,
-                                            một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt kết quả cao các bạn nhé. 👉Vòng 4: Phỏng
-                                            vấn -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt động phỏng vấn, các bạn vui lòng đến trước thời gian
-                                            phỏng vấn khoảng 15p để ổn định. - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. Yêu cầu chung: - Có tâm và có tầm. - Có khả năng tìm kiếm trên Internet. - Có kỹ năng làm việc nhóm. - Yêu
-                                            thích công việc về Công nghệ thông tin (CNTT). - Sinh viên đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. - Thân thiện,
-                                            có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham học hỏi, sẵn sàng trao đổi và thảo luận. Yêu cầu team kỹ thuật: - Có kiến thức về sửa máy tính (chủ yếu là phần
-                                            mềm) là lợi thế. - Kỹ năng tự trao dồi kiến thức từ sách, báo, tạp chí, internet… Yêu cầu team truyền thông & sự kiện: - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một
-                                            lợi thế. - Biết cách quản lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. CÁC VỊ TRÍ ỨNG TUYỂN : Team kỹ thuật: + Hỗ trợ kỹ thuật, sửa chữa, cài
-                                            đặt phần mềm, tư trợ các vấn đề liên quan đến máy tính, công nghệ. + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông
-                                            tin. + Tham gia tổ chức các buổi Seminar. Team PR & sự kiện: + Chụp ảnh, viết bài đăng, làm poster. + Truyền thông cho các chương trình, sự kiện của CLB. + Lên ý tưởng, xây dựng
-                                            kế hoạch, tổ chức các chương trình, các hoạt động của IT-ZONE. —————————————————— LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA Thông tin chi tiết liên hệ: - Email: clbitzone@gmail.com
-                                            - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng —————————————————— Chân thành cảm ơn các bạn đã theo dõi bài viết CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
+                                            —————————————————— <br>Xin chào các bạn sinh viên TDTU 👋👋 <br> IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới. <br> MỤC TIÊU HOẠT ĐỘNG : <br> - Nhằm xây dựng môi trường
+                                            học tập và không gian học thuật dành riêng cho sinh viên quản lý. <br> - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong
+                                            Nhà Trường. <br> QUYỀN LỢI : <br> - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. <br> - Khi tham gia câu lạc bộ các bạn
+                                            sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì đã học được
+                                            qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. <br> - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và tác phong
+                                            chuyên nghiệp. <br> - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. <br> - Được cộng
+                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. <br> - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng
+                                            định mình và giúp nhau cùng tiến bộ. <br> HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: <br> 👉Vòng 1: Điền form online và nộp CV <br> -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy
+                                            đủ thông tin vào form.
+                                            <br> - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân <br> 👉Vòng 2: Teamwork <br> -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. <br> -Các bạn đã điền
+                                            form ở vòng 1 sẽ cùng "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. <br> Các bạn sẽ được chia vào các đội khác nhau
+                                            để cùng xây dựng một dự án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. <br> 👉Vòng 3: ITZONE
+                                            Test <br> -🕘Thời gian: Từ 28/10/2021 và kết thúc trong cùng ngày. <br> -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các
+                                            câu hỏi về lĩnh vực công nghệ thông tin, một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt
+                                            kết quả cao các bạn nhé. <br> 👉Vòng 4: Phỏng vấn <br> -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. <br> - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt
+                                            động phỏng vấn, các bạn vui lòng đến trước thời gian phỏng vấn khoảng 15p để ổn định.
+                                            <br> - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. <br> Yêu cầu chung:
+                                            <br> - Có tâm và có tầm. <br> - Có khả năng tìm kiếm trên Internet. <br> - Có kỹ năng làm việc nhóm. <br> - Yêu thích công việc về Công nghệ thông tin (CNTT). <br> - Sinh viên
+                                            đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. <br> - Thân thiện, có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham
+                                            học hỏi, sẵn sàng trao đổi và thảo luận. <br> Yêu cầu team kỹ thuật: <br> - Có kiến thức về sửa máy tính (chủ yếu là phần mềm) là lợi thế. <br> - Kỹ năng tự trao dồi
+                                            kiến thức từ sách, báo, tạp chí, internet… <br> Yêu cầu team truyền thông & sự kiện: <br> - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một lợi thế. <br> - Biết cách quản
+                                            lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. <br> CÁC VỊ TRÍ ỨNG TUYỂN :- <br> Team kỹ thuật: <br> + Hỗ trợ kỹ thuật, sửa chữa, cài đặt phần mềm,
+                                            tư trợ các vấn đề liên quan đến máy tính, công nghệ.
+                                            <br> + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông tin. <br> + Tham gia tổ chức các buổi Seminar. <br> Team PR & sự kiện: <br>                                            + Chụp ảnh, viết bài đăng, làm poster. <br> + Truyền thông cho các chương trình, sự kiện của CLB.<br> + Lên ý tưởng, xây dựng kế hoạch, tổ chức các chương trình, các hoạt
+                                            động của IT-ZONE.<br> ——————————————————<br> LINK đăng ký:
+                                            <a href="https://forms.gle/CsPca2ZVmWRhoyCJA" style="color: blue;">https://forms.gle/CsPca2ZVmWRhoyCJA</a><br> Thông tin chi tiết liên hệ: <br>- Email: clbitzone@gmail.com<br> - Fanpage: IT-Zone - Trường
+                                            ĐH Tôn Đức Thắng<br> ——————————————————<br> Chân thành cảm ơn các bạn đã theo dõi bài viết
+                                            <br>CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
                                         </div>
 
                                         <!-- Modal footer -->
@@ -473,10 +643,11 @@
                         </div>
                     </div>
                     <div class="w3-quarter">
-                        <img src="images/temp.png" alt="Sandwich" style="width:100%">
-                        <div class="container">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ ỨNG TUYỂN
-                THÀNH VIÊN CLB IT-ZONE 2021</button>
+                        <img src="images/IMG_202110_105.jpg" alt="TUYỂN THÀNH VIÊN CLB IT-ZONE" style="width:100%">
+                        <div class="container" style="text-align: left;  padding: 0;">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="text-align: left; padding: 0;" class="bold">ĐĂNG KÝ ỨNG
+                                TUYỂN
+                                THÀNH VIÊN CLB IT-ZONE 2021</button>
                             <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
                             <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-xl">
@@ -490,28 +661,34 @@
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            —————————————————— MỤC TIÊU HOẠT ĐỘNG : - Nhằm xây dựng môi trường học tập và không gian học thuật dành riêng cho sinh viên quản lý. - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho
-                                            các bạn sinh viên trong Nhà Trường. QUYỀN LỢI : - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. - Khi tham gia câu lạc bộ
-                                            các bạn sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì
-                                            đã học được qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và
-                                            tác phong chuyên nghiệp. - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. - Được cộng
-                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng định
-                                            mình và giúp nhau cùng tiến bộ. HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: 👉Vòng 1: Điền form online và nộp CV -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy đủ thông tin vào form.
-                                            - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân 👉Vòng 2: Teamwork -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. -Các bạn đã điền form ở vòng 1 sẽ cùng
-                                            "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. Các bạn sẽ được chia vào các đội khác nhau để cùng xây dựng một dự
-                                            án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. 👉Vòng 3: ITZONE Test -🕘Thời gian: Từ 28/10/2021
-                                            và kết thúc trong cùng ngày. -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các câu hỏi về lĩnh vực công nghệ thông tin,
-                                            một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt kết quả cao các bạn nhé. 👉Vòng 4: Phỏng
-                                            vấn -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt động phỏng vấn, các bạn vui lòng đến trước thời gian
-                                            phỏng vấn khoảng 15p để ổn định. - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. Yêu cầu chung: - Có tâm và có tầm. - Có khả năng tìm kiếm trên Internet. - Có kỹ năng làm việc nhóm. - Yêu
-                                            thích công việc về Công nghệ thông tin (CNTT). - Sinh viên đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. - Thân thiện,
-                                            có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham học hỏi, sẵn sàng trao đổi và thảo luận. Yêu cầu team kỹ thuật: - Có kiến thức về sửa máy tính (chủ yếu là phần
-                                            mềm) là lợi thế. - Kỹ năng tự trao dồi kiến thức từ sách, báo, tạp chí, internet… Yêu cầu team truyền thông & sự kiện: - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một
-                                            lợi thế. - Biết cách quản lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. CÁC VỊ TRÍ ỨNG TUYỂN : Team kỹ thuật: + Hỗ trợ kỹ thuật, sửa chữa, cài
-                                            đặt phần mềm, tư trợ các vấn đề liên quan đến máy tính, công nghệ. + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông
-                                            tin. + Tham gia tổ chức các buổi Seminar. Team PR & sự kiện: + Chụp ảnh, viết bài đăng, làm poster. + Truyền thông cho các chương trình, sự kiện của CLB. + Lên ý tưởng, xây dựng
-                                            kế hoạch, tổ chức các chương trình, các hoạt động của IT-ZONE. —————————————————— LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA Thông tin chi tiết liên hệ: - Email: clbitzone@gmail.com
-                                            - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng —————————————————— Chân thành cảm ơn các bạn đã theo dõi bài viết CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
+                                            —————————————————— <br>Xin chào các bạn sinh viên TDTU 👋👋 <br> IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới. <br> MỤC TIÊU HOẠT ĐỘNG : <br> - Nhằm xây dựng môi trường
+                                            học tập và không gian học thuật dành riêng cho sinh viên quản lý. <br> - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong
+                                            Nhà Trường. <br> QUYỀN LỢI : <br> - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. <br> - Khi tham gia câu lạc bộ các bạn
+                                            sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì đã học được
+                                            qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. <br> - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và tác phong
+                                            chuyên nghiệp. <br> - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. <br> - Được cộng
+                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. <br> - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng
+                                            định mình và giúp nhau cùng tiến bộ. <br> HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: <br> 👉Vòng 1: Điền form online và nộp CV <br> -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy
+                                            đủ thông tin vào form.
+                                            <br> - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân <br> 👉Vòng 2: Teamwork <br> -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. <br> -Các bạn đã điền
+                                            form ở vòng 1 sẽ cùng "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. <br> Các bạn sẽ được chia vào các đội khác nhau
+                                            để cùng xây dựng một dự án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. <br> 👉Vòng 3: ITZONE
+                                            Test <br> -🕘Thời gian: Từ 28/10/2021 và kết thúc trong cùng ngày. <br> -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các
+                                            câu hỏi về lĩnh vực công nghệ thông tin, một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt
+                                            kết quả cao các bạn nhé. <br> 👉Vòng 4: Phỏng vấn <br> -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. <br> - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt
+                                            động phỏng vấn, các bạn vui lòng đến trước thời gian phỏng vấn khoảng 15p để ổn định.
+                                            <br> - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. <br> Yêu cầu chung:
+                                            <br> - Có tâm và có tầm. <br> - Có khả năng tìm kiếm trên Internet. <br> - Có kỹ năng làm việc nhóm. <br> - Yêu thích công việc về Công nghệ thông tin (CNTT). <br> - Sinh viên
+                                            đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. <br> - Thân thiện, có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham
+                                            học hỏi, sẵn sàng trao đổi và thảo luận. <br> Yêu cầu team kỹ thuật: <br> - Có kiến thức về sửa máy tính (chủ yếu là phần mềm) là lợi thế. <br> - Kỹ năng tự trao dồi
+                                            kiến thức từ sách, báo, tạp chí, internet… <br> Yêu cầu team truyền thông & sự kiện: <br> - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một lợi thế. <br> - Biết cách quản
+                                            lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. <br> CÁC VỊ TRÍ ỨNG TUYỂN :- <br> Team kỹ thuật: <br> + Hỗ trợ kỹ thuật, sửa chữa, cài đặt phần mềm,
+                                            tư trợ các vấn đề liên quan đến máy tính, công nghệ.
+                                            <br> + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông tin. <br> + Tham gia tổ chức các buổi Seminar. <br> Team PR & sự kiện: <br>                                            + Chụp ảnh, viết bài đăng, làm poster. <br> + Truyền thông cho các chương trình, sự kiện của CLB.<br> + Lên ý tưởng, xây dựng kế hoạch, tổ chức các chương trình, các hoạt
+                                            động của IT-ZONE.<br> ——————————————————<br> LINK đăng ký:
+                                            <a href="https://forms.gle/CsPca2ZVmWRhoyCJA" style="color: blue;">https://forms.gle/CsPca2ZVmWRhoyCJA</a><br> Thông tin chi tiết liên hệ: <br>- Email: clbitzone@gmail.com<br> - Fanpage: IT-Zone - Trường
+                                            ĐH Tôn Đức Thắng<br> ——————————————————<br> Chân thành cảm ơn các bạn đã theo dõi bài viết
+                                            <br>CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
                                         </div>
 
                                         <!-- Modal footer -->
@@ -525,135 +702,26 @@
 
                         </div>
                     </div>
-                    <div class="w3-quarter">
-                        <img src="images/temp.png" alt="Sandwich" style="width:100%">
-                        <div class="container">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ ỨNG TUYỂN
-                THÀNH VIÊN CLB IT-ZONE 2021</button>
 
-                            <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
-                            <div class="modal fade" id="myModal">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content">
 
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">ĐĂNG KÝ ỨNG TUYỂN THÀNH VIÊN CLB IT-ZONE 2021</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            —————————————————— MỤC TIÊU HOẠT ĐỘNG : - Nhằm xây dựng môi trường học tập và không gian học thuật dành riêng cho sinh viên quản lý. - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho
-                                            các bạn sinh viên trong Nhà Trường. QUYỀN LỢI : - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. - Khi tham gia câu lạc bộ
-                                            các bạn sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì
-                                            đã học được qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và
-                                            tác phong chuyên nghiệp. - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. - Được cộng
-                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng định
-                                            mình và giúp nhau cùng tiến bộ. HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: 👉Vòng 1: Điền form online và nộp CV -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy đủ thông tin vào form.
-                                            - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân 👉Vòng 2: Teamwork -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. -Các bạn đã điền form ở vòng 1 sẽ cùng
-                                            "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. Các bạn sẽ được chia vào các đội khác nhau để cùng xây dựng một dự
-                                            án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. 👉Vòng 3: ITZONE Test -🕘Thời gian: Từ 28/10/2021
-                                            và kết thúc trong cùng ngày. -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các câu hỏi về lĩnh vực công nghệ thông tin,
-                                            một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt kết quả cao các bạn nhé. 👉Vòng 4: Phỏng
-                                            vấn -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt động phỏng vấn, các bạn vui lòng đến trước thời gian
-                                            phỏng vấn khoảng 15p để ổn định. - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. Yêu cầu chung: - Có tâm và có tầm. - Có khả năng tìm kiếm trên Internet. - Có kỹ năng làm việc nhóm. - Yêu
-                                            thích công việc về Công nghệ thông tin (CNTT). - Sinh viên đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. - Thân thiện,
-                                            có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham học hỏi, sẵn sàng trao đổi và thảo luận. Yêu cầu team kỹ thuật: - Có kiến thức về sửa máy tính (chủ yếu là phần
-                                            mềm) là lợi thế. - Kỹ năng tự trao dồi kiến thức từ sách, báo, tạp chí, internet… Yêu cầu team truyền thông & sự kiện: - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một
-                                            lợi thế. - Biết cách quản lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. CÁC VỊ TRÍ ỨNG TUYỂN : Team kỹ thuật: + Hỗ trợ kỹ thuật, sửa chữa, cài
-                                            đặt phần mềm, tư trợ các vấn đề liên quan đến máy tính, công nghệ. + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông
-                                            tin. + Tham gia tổ chức các buổi Seminar. Team PR & sự kiện: + Chụp ảnh, viết bài đăng, làm poster. + Truyền thông cho các chương trình, sự kiện của CLB. + Lên ý tưởng, xây dựng
-                                            kế hoạch, tổ chức các chương trình, các hoạt động của IT-ZONE. —————————————————— LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA Thông tin chi tiết liên hệ: - Email: clbitzone@gmail.com
-                                            - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng —————————————————— Chân thành cảm ơn các bạn đã theo dõi bài viết CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="w3-quarter">
-                        <img src="images/temp.png" alt="Sandwich" style="width:100%">
-                        <div class="container">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ ỨNG TUYỂN
-                THÀNH VIÊN CLB IT-ZONE 2021</button>
-                            <p>IT-Zone nay đã chính thức mở đợt tuyển thành viên cho năm học mới.</p>
-                            <div class="modal fade" id="myModal">
-                                <div class="modal-dialog modal-xl">
-                                    <div class="modal-content">
-
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">ĐĂNG KÝ ỨNG TUYỂN THÀNH VIÊN CLB IT-ZONE 2021</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        </div>
-
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            —————————————————— MỤC TIÊU HOẠT ĐỘNG : - Nhằm xây dựng môi trường học tập và không gian học thuật dành riêng cho sinh viên quản lý. - Thành lập một đội ngũ IT chuyên nghiệp hỗ trợ các vấn đề về máy tính cho
-                                            các bạn sinh viên trong Nhà Trường. QUYỀN LỢI : - Trải nghiệm quy trình xin việc làm thực tế thông qua hình thức tuyển chọn thành viên của IT-Zone. - Khi tham gia câu lạc bộ
-                                            các bạn sẽ có được training về các cách cài Win, Office, cùng nhiều loại phần mềm hữu ích cho máy tính và dĩ nhiên các bạn sẽ được tự tay mình trải nghiệm những gì
-                                            đã học được qua việc hỗ trợ các vấn đề về máy tính cho các bạn sinh viên trong Nhà Trường. - Nâng cao khả năng chuyên môn và làm việc nhóm, nâng cao tính kỷ luật và
-                                            tác phong chuyên nghiệp. - Được giao lưu, kết bạn với những người chung niềm đam mê và được tham gia các hoạt động ngoại khóa và rèn luyện kỹ năng mềm. - Được cộng
-                                            điểm rèn luyện theo từng học kỳ tùy vào mức độ đóng góp của sinh viên vào ban điều hành. - Trau dồi, phát triển hiệu quả các kỹ năng của bản thân, đến để khẳng định
-                                            mình và giúp nhau cùng tiến bộ. HÌNH THỨC ĐĂNG KÍ VÀ TUYỂN CHỌN: 👉Vòng 1: Điền form online và nộp CV -🕘Thời gian: Từ ngày 5/10/2021 đến 23:59 ngày 11/10/2021 cho các bạn điền đầy đủ thông tin vào form.
-                                            - Ngoài ra các bạn cũng hãy tạo cho mình một chiếc CV thật sáng tạo để ban tổ chức hiểu rõ hơn về bản thân 👉Vòng 2: Teamwork -🕘Thời gian: Từ 15/10/2021 đến 25/10/2021. -Các bạn đã điền form ở vòng 1 sẽ cùng
-                                            "nắm tay nhau và va vào" vòng 2 với hoạt động đầy hấp dẫn: Xây dựng 1 phần thi lên ý tưởng truyền thông cho sinh nhật lần thứ 5 của IT-ZONE. Các bạn sẽ được chia vào các đội khác nhau để cùng xây dựng một dự
-                                            án truyền thông cho sự kiện hoàn toàn chuyên nghiệp, đội có dự án xuất sắc và phù hợp nhất sẽ được dùng để hỗ trợ tổ chức sự kiện sinh nhật IT-ZONE tháng 11 tới. 👉Vòng 3: ITZONE Test -🕘Thời gian: Từ 28/10/2021
-                                            và kết thúc trong cùng ngày. -Các bạn tiếp tục tham gia vào vòng 3. Trong vòng này, các bạn sẽ vận dụng tất cả các kiến thức về công nghệ mà bạn biết để vượt qua các câu hỏi về lĩnh vực công nghệ thông tin,
-                                            một lĩnh vực khá là hot trong thời đại công nghệ 4.0 như hiện nay. Vì vậy trước khi tham gia vòng 3 hãy trang bị cho mình thật nhiều kiến thức về lĩnh vực này để đạt kết quả cao các bạn nhé. 👉Vòng 4: Phỏng
-                                            vấn -🕘Thời gian: Từ 1/11/2021 đến 3/11/2021 diễn ra hoạt động cho các bạn điền form đăng kí lịch phỏng vấn. - Từ 4/11/2021 đến 5/11/2021 sẽ diễn ra hoạt động phỏng vấn, các bạn vui lòng đến trước thời gian
-                                            phỏng vấn khoảng 15p để ổn định. - Dự kiến ngày 6/11/2021 sẽ công bố kết quả. Yêu cầu chung: - Có tâm và có tầm. - Có khả năng tìm kiếm trên Internet. - Có kỹ năng làm việc nhóm. - Yêu
-                                            thích công việc về Công nghệ thông tin (CNTT). - Sinh viên đang học tại trường Đại học Tôn Đức Thắng có ý nguyện tham gia hoạt động và học tập tại IT-Zone. - Thân thiện,
-                                            có tinh thần trách nhiệm, nhiệt tình, cẩn thận, ham học hỏi, sẵn sàng trao đổi và thảo luận. Yêu cầu team kỹ thuật: - Có kiến thức về sửa máy tính (chủ yếu là phần
-                                            mềm) là lợi thế. - Kỹ năng tự trao dồi kiến thức từ sách, báo, tạp chí, internet… Yêu cầu team truyền thông & sự kiện: - Nhanh nhẹn, hoạt bát, hòa đồng, biết vẽ là một
-                                            lợi thế. - Biết cách quản lý, xây dựng và tổ chức sự kiện, ý tưởng, kế hoạch cho team. CÁC VỊ TRÍ ỨNG TUYỂN : Team kỹ thuật: + Hỗ trợ kỹ thuật, sửa chữa, cài
-                                            đặt phần mềm, tư trợ các vấn đề liên quan đến máy tính, công nghệ. + Trao dồi, học hỏi, rèn luyện tăng kỹ năng về máy tính , kiến thức chuyên ngành, công nghệ thông
-                                            tin. + Tham gia tổ chức các buổi Seminar. Team PR & sự kiện: + Chụp ảnh, viết bài đăng, làm poster. + Truyền thông cho các chương trình, sự kiện của CLB. + Lên ý tưởng, xây dựng
-                                            kế hoạch, tổ chức các chương trình, các hoạt động của IT-ZONE. —————————————————— LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA Thông tin chi tiết liên hệ: - Email: clbitzone@gmail.com
-                                            - Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng —————————————————— Chân thành cảm ơn các bạn đã theo dõi bài viết CLB IT-ZONE - Có tâm & có tầm - Sẻ chia & hỗ trợ
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pagination -->
-                <div class="w3-center w3-padding-32">
-                    <div class="w3-bar">
-                        <a href="#" class="w3-bar-item w3-button w3-hover-black w3-disabled">«</a>
-                        <a href="./index.html" class="w3-bar-item w3-black w3-button">1</a>
-                        <a href="" class="w3-bar-item w3-button w3-hover-black">2</a>
-                        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-                        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-                        <a href="#" class="w3-bar-item w3-button w3-hover-black w3-disabled">»</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+          <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-disabled">«</a>
+            <a href="./index.html" class="w3-bar-item w3-black w3-button">1</a>
+            <a href="" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-disabled">»</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 
   <!-- footer -->
-  <footer id="lien-he">
-
+  <footer class="section" id="lien-he">
     <!-- map  -->
-
 
     <!-- noi dung duoi map -->
     <!-- <div class="address container">
@@ -667,51 +735,53 @@
         loading="lazy"></iframe> -->
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.023524698746!2d106.69758091480033!3d10.732668892351272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528b2747a81a3%3A0x33c1813055acb613!2zVMO0biDEkOG7qWMgVGjhuq9uZyBVbml2ZXJzaXR5!5e0!3m2!1sen!2s!4v1634462920829!5m2!1sen!2s"
-          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          width="400" height="400" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
       </div>
 
       <!-- menu mang xa hoi -->
       <div class="menu-social flex">
-        <a href="https://www.facebook.com/caitzone" target="_blank" style="--color: #0674E7;">
+        <a href="https://www.facebook.com/caitzone" target="_blank" style="--color: #0674e7">
           <i class="bx bxl-facebook"></i>
-
         </a>
-        <a href="https://www.youtube.com/channel/UCrQOJNVjrKORubtxAh6QXMQ" target="_blank" style="--color: #FE0101;">
+        <a href="https://www.youtube.com/channel/UCrQOJNVjrKORubtxAh6QXMQ" target="_blank" style="--color: #fe0101">
           <i class="bx bxl-youtube"></i>
-
         </a>
-        <a href="mailto: clbitzone@gmail.com" target="_blank" style="--color: #EA4335;">
+        <a href="mailto: clbitzone@gmail.com" target="_blank" style="--color: #ea4335">
           <i class="bx bx-mail-send"></i>
-
         </a>
-        <a href="#" target="_blank" style="--color: #0674E7;">
+        <a href="#" target="_blank" style="--color: #0674e7">
           <i class="bx bxl-linkedin"></i>
-
         </a>
-        <a href="#" target="_blank" style="--color: #7243BA;">
+        <a href="#" target="_blank" style="--color: #7243ba">
           <i class="bx bxl-instagram"></i>
-
         </a>
       </div>
     </div>
     <div class="address container">
-        <h1>ITZONE</h1>
-        <p>Lau 5AB, 19 Nguyen Huu Tho street, Tan Phong ward, District 7, Ho Chi Minh City, Vietnam.</p>
-      </div>
+      <h1>ITZONE</h1>
+      <p>
+        Lau 5AB, 19 Nguyen Huu Tho street, Tan Phong ward, District 7, Ho Chi
+        Minh City, Vietnam.
+      </p>
+    </div>
   </footer>
-  
 
-  <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_jbrw3hcz.json" background="transparent" speed="1"
-    style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 
   <!-- script phat trien sau -->
   <script src="scripts/index.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<<<<<<< HEAD
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- link js by Dang -->
     <script src="/scripts/thongtin.js"></script>
   </body>
+=======
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+>>>>>>> 96c2d8cd1a41bc2c99dceda845e91e7d8e8c787c
 
 </html>

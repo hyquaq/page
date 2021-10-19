@@ -28,7 +28,25 @@ canvas {
 
 .flex {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+}
+
+.pop-up {
+  --width: 100px;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 2;
+  width: var(--width);
+  height: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.pop-up lottie-player {
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -42,8 +60,8 @@ header {
   background-color: var(--mau-1);
   padding: var(--padding-header-footer);
   position: fixed;
-  z-index: 2;
-  transition: background-color 0.2s linear;
+  z-index: 5;
+  transition: background 0.2s linear;
 }
 header.transparent {
   background-color: var(--mau-0);
@@ -76,12 +94,39 @@ header .container .menu a {
   text-decoration: none;
   gap: 6px;
   transition: opacity 0.1s;
+  position: relative;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.4rem;
+  overflow: hidden;
+  transition: font-weight 0.2s;
+}
+header .container .menu a i {
+  display: none;
+}
+header .container .menu a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  background-color: red;
+  transition: all 0.2s linear;
+  left: 50%;
+  right: 50%;
+  background: #dadbdd;
 }
 header .container .menu a:hover {
   opacity: 0.7;
 }
 header .container .menu a:hover i {
   font-weight: 900;
+}
+header .container .menu a:hover::after {
+  left: 10%;
+  right: 10%;
+}
+header .container .menu a.active {
+  font-weight: bolder;
+  pointer-events: none;
 }
 header .container .hamburger {
   display: none;
@@ -99,14 +144,13 @@ header .close-menu.active {
 }
 
 @media (max-width: 922px) {
-  header .container {
-    position: relative;
-  }
   header .container .menu {
-    position: absolute;
     background-color: var(--mau-3);
+    background: #a23f9c;
+    background: linear-gradient(156deg, #a23f9c 0%, #ff4699 38%, #d22e30 100%);
+    position: absolute;
     z-index: 9999;
-    top: calc(-1 * var(--padding-top-bottom-header-footer));
+    top: 0;
     height: 100vh;
     width: var(--width-header-on-mobile);
     flex-direction: column;
@@ -116,12 +160,15 @@ header .close-menu.active {
     left: calc(-1 * var(--width-header-on-mobile) - 10vw);
   }
   header .container .menu.active {
-    left: -10vw;
+    left: 0;
   }
   header .container .menu a {
     padding: 1rem 0 1rem 2rem;
     width: 100%;
     transition: 0.5s;
+  }
+  header .container .menu a i {
+    display: block;
   }
   header .container .menu a:hover {
     opacity: 0.8;
@@ -134,11 +181,37 @@ header .close-menu.active {
     color: var(--mau-4);
     cursor: pointer;
   }
+  header .container .hamburger i {
+    padding: 0.5rem;
+    border: 2px solid var(--mau-4);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--mau-4);
+    font-weight: bold;
+    opacity: 0.7;
+    transition: opacity 0.2s linear;
+  }
+  header .container .hamburger i:hover {
+    opacity: 1;
+    background-color: #ffffff77;
+  }
+  header .container .hamburger.active .open {
+    display: none;
+  }
+  header .container .hamburger.active .close {
+    display: block;
+  }
+  header .container .hamburger .open {
+    display: block;
+  }
+  header .container .hamburger .close {
+    display: none;
+  }
 }
 ::-webkit-scrollbar {
   /* 1 */
   width: 12px;
-  background-color: #2d2e30;
+  background-color: var(--mau-4);
 }
 
 ::-webkit-scrollbar-button {
@@ -156,9 +229,9 @@ header .close-menu.active {
 
 ::-webkit-scrollbar-thumb {
   /* 5 */
-  border: 2px solid var(--mau-5);
+  border: 2px solid var(--mau-4);
   margin: 0 auto;
-  background-color: var(--mau-4);
+  background-color: var(--mau-1);
   border-radius: 5px;
 }
 
@@ -173,9 +246,10 @@ header .close-menu.active {
 footer {
   --size-logo-social: 2rem;
   --space-logo-social: 0.5rem;
-  --height-map: 300px;
+  --height-footer: 600px;
   background-color: var(--mau-1);
   padding: var(--padding-header-footer);
+  padding: 3.7rem 0 1rem 0;
 }
 footer .address {
   color: var(--mau-4);
@@ -218,6 +292,9 @@ footer .container .menu-social a:hover {
 @media (max-width: 922px) {
   footer .container {
     flex-direction: column;
+  }
+  footer .container .map {
+    width: 100%;
   }
 }
 

@@ -2,6 +2,9 @@
     footer {
         .container {
             flex-direction: column;
+            .map {
+                width: 100%;
+            }
         }
     }
 }
