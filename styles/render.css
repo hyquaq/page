@@ -193,7 +193,7 @@ header .close-menu.active {
 ::-webkit-scrollbar {
   /* 1 */
   width: 12px;
-  background-color: #2d2e30;
+  background-color: var(--mau-4);
 }
 
 ::-webkit-scrollbar-button {
@@ -211,9 +211,9 @@ header .close-menu.active {
 
 ::-webkit-scrollbar-thumb {
   /* 5 */
-  border: 2px solid var(--mau-5);
+  border: 2px solid var(--mau-4);
   margin: 0 auto;
-  background-color: var(--mau-4);
+  background-color: var(--mau-1);
   border-radius: 5px;
 }
 
