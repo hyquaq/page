@@ -128,7 +128,7 @@
     </section>
 
     <!-- section hoat dong-->
-    <section id="hoat-dong" style="height: 750px">
+    <section id="hoat-dong">
       
       <div class="top">
         <h1>Hoạt động</h1>
@@ -137,7 +137,7 @@
 
         <div class="incoming">
           <div id="imageAndGlass">
-            <div class="glass">Sự kiện sắp diễn ra</div>
+            <div class="glass"><p id="test">Sự kiện sắp diễn ra</p></div>
             <img src="./images/hoat-dong.jpg" alt="">
           </div>
           <div class="content">
@@ -149,7 +149,10 @@
             <div>Text</div>
             <div>Text</div>
           </div>
-          <div class="more">Xem thêm</div>
+          <div class="more">Xem thêm </div>
+          <div id="icon-more" onclick="pushIncoming()" >
+            <i id="more" class="bx bx-down-arrow"></i>
+          </div>
         </div>
 
         <div class="recent">
@@ -166,22 +169,28 @@
             <div>Text</div>
           </div>
           <div class="more">Xem thêm</div>
+          <div id="icon-more" onclick="pushRecent()">
+            <i id="more" class="bx bx-down-arrow"></i>
+          </div>
         </div>
 
         <div class="feature">
-          <div id="imageAndGlass">
-            <div class="glass">Sự kiện nổi bật</div>
-            <img src="./images/hoat-dong-3.jpg" alt="">
-          </div>
-          <div class="content">
-            <div>Text</div>
-            <div>Text</div>
-            <div>Text</div>
-            <div>Text</div>
-            <div>Text</div>
-            <div>Text</div>
-          </div>
-          <div class="more">Xem thêm</div>
+            <div id="imageAndGlass">
+              <div class="glass">Sự kiện nổi bật</div>
+              <img src="./images/hoat-dong-3.jpg" alt="">
+            </div>
+            <div class="content">
+              <div>Text</div>
+              <div>Text</div>
+              <div>Text</div>
+              <div>Text</div>
+              <div>Text</div>
+              <div>Text</div>
+            </div>
+            <div class="more">Xem thêm</div>
+            <div id="icon-more" onclick="pushFeature()">
+              <i id="more" class="bx bx-down-arrow"></i>
+            </div>
         </div>
       </div>
     
@@ -701,6 +710,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <!-- link js by Dang -->
+    <script src="/scripts/thongtin.js"></script>
+  </body>
 
 </html>
