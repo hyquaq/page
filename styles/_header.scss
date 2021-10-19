@@ -11,7 +11,7 @@ header {
 
   padding: var(--padding-header-footer);
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   transition: background 0.2s linear;
 
   &.transparent {

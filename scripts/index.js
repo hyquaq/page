@@ -26,18 +26,18 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 document.querySelector("header .logo").addEventListener("click", (e) => {
   document.querySelectorAll(".menu a").forEach(e => e.classList.remove('active'));
 
-  // element add class active 
-  document.querySelectorAll(".menu a")[0].classList.add('active');
+  // // element add class active 
+  // document.querySelectorAll(".menu a")[0].classList.add('active');
 })
 
 document.querySelectorAll(".menu a").forEach((element) => {
   element.addEventListener("click", (e) => {
 
-    // all element remove class active
-    document.querySelectorAll(".menu a").forEach(e => e.classList.remove('active'));
+    // // all element remove class active
+    // document.querySelectorAll(".menu a").forEach(e => e.classList.remove('active'));
 
-    // element add class active 
-    element.classList.add('active');
+    // // element add class active 
+    // element.classList.add('active');
 
 
     document.querySelector("header .menu").classList.toggle("active");

@@ -31,6 +31,16 @@ canvas {
   align-items: center;
 }
 
+.pop-up {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 10vw;
+  height: 10vw;
+  transform: translate(-10vw, -10vw);
+}
+
 header {
   --size-logo: 50px;
   --height-header: 200px;
@@ -42,7 +52,7 @@ header {
   background-color: var(--mau-1);
   padding: var(--padding-header-footer);
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   transition: background 0.2s linear;
 }
 header.transparent {
