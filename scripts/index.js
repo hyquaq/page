@@ -26,18 +26,18 @@ document.querySelector(".hamburger").addEventListener("click", () => {
 document.querySelector("header .logo").addEventListener("click", (e) => {
   document.querySelectorAll(".menu a").forEach(e => e.classList.remove('active'));
 
-  // // element add class active 
-  // document.querySelectorAll(".menu a")[0].classList.add('active');
+  // element add class active 
+  document.querySelectorAll(".menu a")[0].classList.add('active');
 })
 
 document.querySelectorAll(".menu a").forEach((element) => {
   element.addEventListener("click", (e) => {
 
-    // // all element remove class active
-    // document.querySelectorAll(".menu a").forEach(e => e.classList.remove('active'));
+    // all element remove class active
+    document.querySelectorAll(".menu a").forEach(e => e.classList.remove('active'));
 
-    // // element add class active 
-    // element.classList.add('active');
+    // element add class active 
+    element.classList.add('active');
 
 
     document.querySelector("header .menu").classList.toggle("active");
@@ -58,6 +58,34 @@ window.addEventListener("scroll", function (event) {
   } else {
     document.querySelector("header").classList.add("transparent");
   }
+
+
+  const navItems = document.querySelectorAll(".menu a");
+  const secItems = document.querySelectorAll(".section");
+  // console.log(navItems);
+  // console.log(secItems);
+
+  secItems.forEach((section, indexSection) => {
+    const top = section.offsetTop - $("header").height();
+    const html = this.document.documentElement;
+
+    navItems.forEach(navItem => {
+      const hrefNav = navItem.href.match(/#[a-zA-Z-]+/)[0];
+      const idSection = '#' + section.id;
+      const height = section.offsetHeight;
+
+
+      console.log(indexSection)
+      if ((html.scrollTop >= top && top + height >= html.scrollTop) || indexSection == 4) {
+        hrefNav === idSection ? navItem.classList.add('active') : navItem.classList.remove('active');
+        ;
+      } else {
+        hrefNav === idSection &&
+          navItem.parentElement.classList.remove('active');
+      }
+    })
+  })
+
 });
 
 window.addEventListener("click", (e) => {
