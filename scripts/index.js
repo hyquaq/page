@@ -112,3 +112,24 @@ document.addEventListener(
   },
   false
 );
+//////////////// Trang chu
+var BGC = document.querySelector("#backgroundClick"),
+  homeCard = document.querySelector("#style-1");
+  var trys =0;
+
+document.querySelector("#chaomung").addEventListener(
+  "mouseup",
+  function () {
+      homeCard.classList.remove("home--card__false");
+      setTimeout(function () {trys=1;},100)
+  },
+  false
+);
+window.onclick = function (e) {
+  if (e.target != BGC && e.target != homeCard && trys ==1) {
+    homeCard.style.animation = "disappear .7s ease";
+      trys =0;
+    setTimeout(function (){homeCard.classList.add("home--card__false");
+    homeCard.style.animation = "";},690)
+  }
+};
