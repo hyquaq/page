@@ -85,13 +85,13 @@
   #wrapArrow {
     position: absolute;
     left: 25%;
-    top: 25%;
+    top: 23%;
     transform: rotateZ(-180deg);
   }
   #wrapArrow2 {
     position: absolute;
     right: 25%;
-    top: 25%;
+    top: 23%;
   }
 
   /* ///////arrow  */
