@@ -16,13 +16,13 @@
 @media (min-width: 922px) {
   #chaomung {
     position: relative;
-    top: 25%;
+    top: 23%;
     left: 50%;
     z-index: 1;
     font-size: 2.5em;
     color: #005488;
     transform: translateX(-50%);
-    font-weight: normal;
+    font-weight: 666;
     font-family: Roboto;
     display: inline-block;
     padding: 6px 15px;
@@ -33,8 +33,6 @@
     overflow: hidden;
     line-height: 68.4px;
     transition: ease 0.34s;
-    /* box-shadow: 0px -5px 10px #ccc; */
-    /* animation: blindShadow 5s linear infinite; */
   }
   #chaomung div {
     animation: textTyping 5s linear infinite;
@@ -71,7 +69,7 @@
     font-weight: 650;
     opacity: 0.75;
     text-shadow: 2px 5px 1px #333;
-    box-shadow: 0px -5px 10px #ccc;
+    box-shadow: 0px 0px 15px #ccc;
   }
   #chaomung:active {
     background-color: #0066a4;
@@ -151,11 +149,11 @@
   .home--card__true {
     font-family: "Roboto", sans-serif;
     position: absolute;
-    bottom: 1vh;
+    bottom: 0.5vh;
     left: 50vw;
     z-index: 2;
     transform: translateX(-50%);
-    height: 74vh;
+    height: 76vh;
     width: var(--width-page);
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(50px);
@@ -223,12 +221,12 @@
 
   #intro>img {
     position: absolute;
-    bottom: 1vh;
+    bottom: 0.5vh;
     left: 50%;
     transform: translateX(-49%);
     z-index: 0;
-    height:74vh;
-    width:463px;
+    height:67vh;
+    width:auto; /*//463*/
     animation: blindShadow 5s linear infinite;
     border-radius: 20px;
     opacity: 0.85;
