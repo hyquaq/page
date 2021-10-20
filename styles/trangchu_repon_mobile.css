@@ -1,14 +1,5 @@
 /* //////////////////////////////////////////mobile */
 @media (max-width: 922px) {
-  #lap_icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
   #mobile_hand{
     position: absolute;
     top: 24%;
