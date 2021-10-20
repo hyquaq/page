@@ -136,6 +136,9 @@ div .more {
     #hoat-dong .bottom {
         flex-direction: column;
     }
+    #hoat-dong {
+        height: fit-content; 
+    }
     #hoat-dong .bottom .incoming,
     #hoat-dong .bottom .recent,
     #hoat-dong .bottom .feature {
