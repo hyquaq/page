@@ -130,6 +130,7 @@ div .more {
     bottom: 10px;
     text-align: center;
     margin-left: 5%;
+    bottom: 0;
     display: none;
 }
 @media only screen and (max-width: 510px) {
