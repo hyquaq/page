@@ -169,6 +169,7 @@ div .more {
     #hoat-dong .bottom .feature .content {
         height: 50px;
         margin-top: -15px;
+        overflow: auto;
     }
     #hoat-dong .bottom .incoming:hover .content,
     #hoat-dong .bottom .recent:hover .content,
