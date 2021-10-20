@@ -223,3 +223,8 @@ window.onclick = function (e) {
     }, 690)
   }
 };
+
+var Colors = {
+  maincolor: "#0066a4",
+  color: "#7ec142",
+};

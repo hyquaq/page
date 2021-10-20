@@ -21,7 +21,7 @@ function createScene() {
 
   // Thêm hiệu ứng sương mù vào scene, cùng màu với
   // màu nền đã style trước đó
-  scene.fog = new THREE.Fog(Colors.LightYellow, 1000, 1500);
+  // scene.fog = new THREE.Fog(Colors.LightYellow, 1000, 1500);
 
   // Tạo camera
   aspectRatio = WIDTH / HEIGHT;
@@ -40,13 +40,7 @@ function createScene() {
   camera.position.z = 700;
   camera.position.y = 0;
  
-    dVector = new THREE.Vector3(0, -100, 0);//y=-500
-  camera.lookAt(dVector);
-
-    //...............................The X axis is red. The Y axis is green. The Z axis is blue.
-    // const axesHelper = new THREE.AxesHelper( 2000 );
-    // scene.add( axesHelper );
-    // scene.background = new THREE.Color(Colors.Thistle);
+  camera.lookAt(0, -100, 0);
 
   // Tạo renderer
   renderer = new THREE.WebGLRenderer({
@@ -56,7 +50,7 @@ function createScene() {
 
     // Bật khử răng cưa; hiệu năng sẽ giảm
     // nhưng sẽ ổn thôi vì project này ít đối tượng
-    antialias: true,
+    antialias: false,
   });
 
   // Xác định kích cỡ của renderer; trong trường hợp này,
@@ -64,7 +58,7 @@ function createScene() {
   renderer.setSize(WIDTH / 1, HEIGHT / 1);
 
   // Cho phép render bóng đổ
-  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.enabled = false;
 
   // Thêm DOM của renderer vào
   // container ta đã tạo trong HTML
