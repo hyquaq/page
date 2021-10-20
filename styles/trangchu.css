@@ -72,13 +72,13 @@ input[name="bottom"]{
 }
 
 .slides{
-  width: 200%;
+  width: 300%;
   height: 100%;
   display: flex;
 }
 
 .slide{
-  width: 50%;
+  width: 33.3%;
   transition: linear 1.2s;
   text-align: center;
 }
