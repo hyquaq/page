@@ -25,7 +25,7 @@ function createScene() {
 
   // Tạo camera
   aspectRatio = WIDTH / HEIGHT;
-  fieldOfView = 79;
+  fieldOfView = 79.5;
   nearPlane = 1;
   farPlane = 20000;
   camera = new THREE.PerspectiveCamera(

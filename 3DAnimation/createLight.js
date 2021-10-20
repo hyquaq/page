@@ -26,8 +26,8 @@ function createLights() {
 
   // cài đặt độ phân giải của bóng đổ; càng cao càng đẹp,
   // nhưng cũng càng nặng nề hơn
-  shadowLight.shadow.mapSize.width = 1000;
-  shadowLight.shadow.mapSize.height = 1000; //2048
+  shadowLight.shadow.mapSize.width = 0;
+  shadowLight.shadow.mapSize.height = 0; //2048
 
   // thêm vào scene để kích hoạt
   scene.add(hemisphereLight);
