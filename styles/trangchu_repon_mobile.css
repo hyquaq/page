@@ -1,0 +1,106 @@
+/* //////////////////////////////////////////mobile */
+@media (max-width: 922px) {
+  #chaomung {
+    position: relative;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.05em;
+    color: #005488;
+    font-weight: 650;
+    font-family: consolas;
+    box-shadow: 1px 1px 5px #ccc;
+    display: inline-block;
+    padding: 0px 15px;
+    z-index: 0;
+    border-radius: 6px;
+    text-shadow: 10px 10px 5px rgba(51, 51, 51, 0.203);
+    height: 10vh;
+    width: 80vw;
+    overflow: hidden;
+    line-height: 10vh;
+    transition: ease 0.4s;
+    animation: blindShadow 5s linear infinite;
+  }
+  #intro .farindex {
+    z-index: -1;
+  }
+  #chaomung:active {
+    background-color: #d1a759a2;
+    opacity: 0.75;
+  }
+  #chaomung div {
+    box-shadow: 2.5px 0px 0px #0066a4;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    animation: textTyping 5s linear infinite;
+  }
+  @keyframes textTyping {
+    0%,
+    90%,
+    100% {
+      width: 0px;
+    }
+    30%,
+    60% {
+      width: 60vw;
+    }
+  }
+
+  /* ............ chỉnh từ phần arrow từ lap sang mobile................ */
+
+  /* .............Arrow.......................... */
+  #wrapArrow {
+   display:none;
+  }
+  #wrapArrow2 {
+   display:none;
+  }
+  .home--card__true{
+      display:none;
+  }
+
+/* ............................home............. */
+
+
+/* ......................slides............... */
+
+.slideshow{
+    width: 100%;
+    height: 67vh;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.5vh;
+  }
+  .bar {
+    width: 14px;
+    height: 14px;
+  }
+  .slide{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    opacity: 0.85;
+  }
+  .s1>img{
+      height:80%;
+      width:auto;
+  }
+  #intro .nut-slide{
+    border:0 !important;
+    background-color: rgba(255, 255, 255,0.2);
+  }
+  .nut-slide:active{
+      background-color: rgba(246, 0, 0, 0.4);
+  }
+
+}

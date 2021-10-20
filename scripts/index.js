@@ -119,7 +119,67 @@ document.addEventListener(
   },
   false
 );
-//////////////// Trang chu
+
+
+//.................................slide
+var slide = document.getElementById('js-slide');
+var thoigian = 1;
+function auto(){
+setTimeout(() => {
+  slide.style.marginLeft = '0%'
+  khoa =0
+  kt.style.backgroundColor = '#3f5777'
+    kt2.style.backgroundColor = null
+}, 0000);
+setTimeout(() => {
+  slide.style.marginLeft = '-50%'
+  khoa =-20
+  kt2.style.backgroundColor = '#3f5777'
+    kt.style.backgroundColor = null
+}, 5000);
+}
+
+auto();
+var runSlide = setInterval(() => {
+    auto();
+}, 11000);
+
+
+var kt = document.getElementById('b1');
+var kt2 = document.getElementById('b2');
+
+
+var khoa = 0
+function nutSlidePhai(){
+    khoa -=50;
+    slide.style.marginLeft = khoa +'%' 
+    if (khoa < -50){
+        khoa= -50
+        slide.style.marginLeft = khoa + '%' 
+    }
+    kiem();
+}
+function nutSlideTrai(){
+    khoa+=50
+    slide.style.marginLeft = khoa + '%' 
+    if (khoa > 0){
+        khoa=0
+        slide.style.marginLeft = khoa + '%' 
+    }
+    kiem();
+}
+
+function kiem(){
+    if (khoa == 0){
+    kt.style.backgroundColor = '#3f5777'
+    kt2.style.backgroundColor = null
+} else if (khoa == -50){
+    kt2.style.backgroundColor = '#3f5777'
+    kt.style.backgroundColor = null
+}  
+}
+
+//////////////// ..........................................Trang chu
 var BGC = document.querySelector("#backgroundClick"),
   homeCard = document.querySelector("#style-1");
 var trys = 0;
@@ -128,7 +188,7 @@ document.querySelector("#chaomung").addEventListener(
   "mouseup",
   function () {
     homeCard.classList.remove("home--card__false");
-    setTimeout(function () { trys = 1; }, 100)
+    setTimeout(function () { trys = 1; clearInterval(runSlide);}, 100)
   },
   false
 );
@@ -139,6 +199,10 @@ window.onclick = function (e) {
     setTimeout(function () {
       homeCard.classList.add("home--card__false");
       homeCard.style.animation = "";
+      auto();
+      runSlide = setInterval(() => {
+        auto();
+    }, 11000);
     }, 690)
   }
 };
