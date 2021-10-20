@@ -1,5 +1,7 @@
 /* laptop */
 @media (min-width: 922px) {
+  #mobile_hand{display: none;}
+  #lap_icon{display: none;}
     #chaomung {
       position: relative;
       top: 23%;
