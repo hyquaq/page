@@ -25,7 +25,7 @@ function createScene() {
 
   // Tạo camera
   aspectRatio = WIDTH / HEIGHT;
-  fieldOfView = 80;
+  fieldOfView = 79;
   nearPlane = 1;
   farPlane = 20000;
   camera = new THREE.PerspectiveCamera(
@@ -40,7 +40,7 @@ function createScene() {
   camera.position.z = 700;
   camera.position.y = 0;
  
-    dVector = new THREE.Vector3(0, -60, 0);//y=-500
+    dVector = new THREE.Vector3(0, -100, 0);//y=-500
   camera.lookAt(dVector);
 
     //...............................The X axis is red. The Y axis is green. The Z axis is blue.

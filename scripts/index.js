@@ -59,6 +59,13 @@ window.addEventListener("scroll", function (event) {
     document.querySelector("header").classList.add("transparent");
   }
 
+  // remove lop ao close menu
+  // [...document.querySelector("header .close-menu").classList].indexOf("active") ? document.querySelector("header .close-menu").click() : console.log("1");
+  if (document.querySelector("header .close-menu.active") != null) {
+    document.querySelector("header .close-menu.active").classList.remove("active")
+    document.querySelector(".hamburger").classList.toggle('active');
+  }
+
 
   const navItems = document.querySelectorAll(".menu a");
   const secItems = document.querySelectorAll(".section");
@@ -112,3 +119,26 @@ document.addEventListener(
   },
   false
 );
+//////////////// Trang chu
+var BGC = document.querySelector("#backgroundClick"),
+  homeCard = document.querySelector("#style-1");
+var trys = 0;
+
+document.querySelector("#chaomung").addEventListener(
+  "mouseup",
+  function () {
+    homeCard.classList.remove("home--card__false");
+    setTimeout(function () { trys = 1; }, 100)
+  },
+  false
+);
+window.onclick = function (e) {
+  if (e.target != BGC && e.target != homeCard && trys == 1) {
+    homeCard.style.animation = "disappear .7s ease";
+    trys = 0;
+    setTimeout(function () {
+      homeCard.classList.add("home--card__false");
+      homeCard.style.animation = "";
+    }, 690)
+  }
+};

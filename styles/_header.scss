@@ -41,6 +41,7 @@ header {
       justify-content: space-around;
       align-items: center;
       width: var(--width-menu);
+
       a {
         color: var(--mau-4);
         text-decoration: none;
@@ -87,6 +88,11 @@ header {
           // border-radius: 1rem;
           font-weight: bolder;
           pointer-events: none;
+        }
+
+        span {
+          font-family: "Raleway", sans-serif;
+          text-transform: uppercase;
         }
       }
     }
