@@ -149,23 +149,6 @@
     .home--card__false{
       display: none ;
     }
-    
-    @keyframes  appear{
-      from {
-        left: -100vw;
-      }
-      to {
-        left: 50vw;
-      }
-    }
-    @keyframes  disappear{
-      from {
-        left: 50vw;
-      }
-      to {
-        left: -100vw;
-      }
-    }
   
     .home--button {
       outline: 0;

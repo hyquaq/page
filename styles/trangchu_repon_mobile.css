@@ -27,15 +27,12 @@
     width: 66vw;
     overflow: hidden;
     line-height: 10vh;
-    transition: ease 0.4s;
-    animation: blindShadow 5s linear infinite;
   }
   #intro .farindex {
     z-index: -1;
   }
   #chaomung:active {
-    background-color: #d1a759a2;
-    opacity: 0.75;
+    background-color: #ffb62da2;
   }
   #chaomung div {
     box-shadow: 2.5px 0px 0px #0066a4;
@@ -65,12 +62,94 @@
   #wrapArrow2 {
    display:none;
   }
+  
+  /* ............................home............. */
+  
   .home--card__true{
-      display:none;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    bottom: 0.5vh;
+    left: 50vw;
+    z-index: 2;
+    transform: translateX(-50%);
+    height: 76vh;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(200px);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    padding: 35px 20px 0 20px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    overscroll-behavior: auto;
+    animation: appear .7s ease-in-out;
+  }
+  .home--card__false{
+    display: none ;
+  }
+  .home--button {
+    outline: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .section-card h1 {
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    font-size: 180%;
+  }
+  .subsection-card {
+    height: auto;
+  }
+  .section-card-content {
+    font-size: 1.1em;
+    line-height: 23px;
+    text-align: justify;
+  }
+  .section-card-content p {
+    text-indent: -0.5em;
+    margin:5px 0;
+    line-height: 130%;
+  }
+  .section-card-content h2{
+    text-indent: -0.5em;
+    margin-bottom:15px;
+    font-size: 150%;
+  }
+  .subsection-card hr {
+    border-color: #0065a4;
   }
 
-/* ............................home............. */
+  #active-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+  }
+  .subsection-card img {
+    width: 75%;
+    margin: 20px 0px;
+  }
 
+  #backgroundClick {
+    height: 300%;
+    width: 100%;
+    background-color: transparent;
+    position:absolute;
+  }
+ 
 
 /* ......................slides............... */
 

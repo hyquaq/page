@@ -24,6 +24,22 @@
     box-shadow: 0px 0px 70px rgb(73, 136, 194);
   }
 }
+@keyframes  appear{
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 50vw;
+  }
+}
+@keyframes  disappear{
+  from {
+    left: 50vw;
+  }
+  to {
+    left: -100vw;
+  }
+}
 /* ..................................slide................*/
 
 
