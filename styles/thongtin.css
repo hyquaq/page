@@ -130,10 +130,29 @@ div .more {
     bottom: 10px;
     text-align: center;
     margin-left: 5%;
-    bottom: 0;
+    bottom: 0px;
     display: none;
 }
-@media only screen and (max-width: 510px) {
+#hoat-dong #information {
+    width: 90%;
+    height: 90%;
+    border: 1px solid red;
+    background-color: white;
+    position: absolute;
+    z-index: 10000;
+    margin-left: -5%;
+    border-radius: 15px;
+    display: none;
+}
+#hoat-dong #information #button i{
+    font-size: 30px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+/*Mobile*/
+@media only screen and (max-width:510px) {
     #hoat-dong .bottom {
         flex-direction: column;
     }
@@ -168,7 +187,7 @@ div .more {
     #hoat-dong .bottom .incoming .content,
     #hoat-dong .bottom .recent .content,
     #hoat-dong .bottom .feature .content {
-        height: 50px;
+        height: 46px;
         margin-top: -15px;
         overflow: auto;
     }
