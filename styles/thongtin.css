@@ -8,9 +8,18 @@ a:visited {
 #hoat-dong {
     margin-bottom: 150px;
     width: 80%;
-    height: 850px;
+    /* height: 850px; */
+    /* do height co dinh nen phan duoi bi day len nen gay ra loi */
     margin: auto;
 }
+
+@media (min-width: 1024px) {
+    #hoat-dong {
+        height: 750px;
+        /* do height co dinh nen phan duoi bi day len nen gay ra loi */
+    }
+}
+
 #hoat-dong h1 {
     text-align: center;
     font-size: 50px;
@@ -24,9 +33,9 @@ a:visited {
     display: flex;
     justify-content: space-around;
 }
-#hoat-dong .bottom .incoming, 
+#hoat-dong .bottom .incoming,
 #hoat-dong .bottom .recent,
-#hoat-dong .bottom .feature{
+#hoat-dong .bottom .feature {
     width: 30%;
     height: 500px;
     border-radius: 15px;
@@ -88,7 +97,7 @@ a:visited {
 #hoat-dong .bottom .incoming:hover .more,
 #hoat-dong .bottom .recent:hover .more,
 #hoat-dong .bottom .feature:hover .more {
-   display: block;
+    display: block;
 }
 #hoat-dong .bottom .incoming:hover .content,
 #hoat-dong .bottom .recent:hover .content,
@@ -123,13 +132,13 @@ div .more {
     margin-left: 5%;
     display: none;
 }
-@media only screen and (max-width: 510px){
-    #hoat-dong .bottom{
+@media only screen and (max-width: 510px) {
+    #hoat-dong .bottom {
         flex-direction: column;
     }
-    #hoat-dong .bottom .incoming, 
+    #hoat-dong .bottom .incoming,
     #hoat-dong .bottom .recent,
-    #hoat-dong .bottom .feature{
+    #hoat-dong .bottom .feature {
         width: 100%;
         height: 380px;
         margin-bottom: 50px;
@@ -141,26 +150,26 @@ div .more {
     #icon-more {
         display: block;
     }
-#hoat-dong .bottom .incoming:hover .more,
-#hoat-dong .bottom .recent:hover .more,
-#hoat-dong .bottom .feature:hover .more {
-   display: none;
-}
-#hoat-dong .bottom .incoming:hover,
-#hoat-dong .bottom .recent:hover,
-#hoat-dong .bottom .feature:hover {
-    height: 380px;
-    transform: translateY(0px);
-}
-#hoat-dong .bottom .incoming .content,
-#hoat-dong .bottom .recent .content,
-#hoat-dong .bottom .feature .content {
-    height: 50px;
-    margin-top: -15px;
-}
-#hoat-dong .bottom .incoming:hover .content,
-#hoat-dong .bottom .recent:hover .content,
-#hoat-dong .bottom .feature:hover .content {
-    height: 50px;
-}
+    #hoat-dong .bottom .incoming:hover .more,
+    #hoat-dong .bottom .recent:hover .more,
+    #hoat-dong .bottom .feature:hover .more {
+        display: none;
+    }
+    #hoat-dong .bottom .incoming:hover,
+    #hoat-dong .bottom .recent:hover,
+    #hoat-dong .bottom .feature:hover {
+        height: 380px;
+        transform: translateY(0px);
+    }
+    #hoat-dong .bottom .incoming .content,
+    #hoat-dong .bottom .recent .content,
+    #hoat-dong .bottom .feature .content {
+        height: 50px;
+        margin-top: -15px;
+    }
+    #hoat-dong .bottom .incoming:hover .content,
+    #hoat-dong .bottom .recent:hover .content,
+    #hoat-dong .bottom .feature:hover .content {
+        height: 50px;
+    }
 }
