@@ -109,7 +109,7 @@ a:visited {
 #hoat-dong .bottom .incoming .content div:hover,
 #hoat-dong .bottom .recent .content div:hover,
 #hoat-dong .bottom .feature .content div:hover {
-    background-color: rgb(236, 236, 236, 0.4);
+    background-color: rgba(201, 201, 201, 0.4);
 }
 div .more {
     color: white;
