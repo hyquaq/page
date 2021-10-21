@@ -2,7 +2,7 @@
 @media (max-width: 922px) {
   #mobile_hand{
     position: absolute;
-    top: 24%;
+    top: 24vh;
     right: 5vw;
     height: 10%;
     line-height: 10vh;
