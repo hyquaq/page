@@ -1,32 +1,25 @@
 /* //////////////////////////////////////////mobile */
 @media (max-width: 922px) {
-  #mobile_hand {
-    position: absolute;
-    top: 24vh;
-    right: 5vw;
-    height: 10%;
-    line-height: 10vh;
-  }
   #chaomung {
-    position: relative;
-    top: 24% !important;
+    position: absolute;
+    bottom: 10%;
     left: 50%;
+    z-index: 2;
     transform: translateX(-50%);
     text-align: center;
     font-size: 1.05em;
-    color: #005488;
+    color: #029eff;
     font-weight: 650;
-    font-family: consolas;
-    box-shadow: 1px 1px 5px #ccc;
+    font-family: Roboto;
     display: inline-block;
     padding: 0px 1vw;
-    z-index: 0;
-    border-radius: 6px;
+    border-radius: 40% 8px;
     text-shadow: 10px 10px 5px rgba(51, 51, 51, 0.203);
     height: 10%;
     width: 66vw;
     overflow: hidden;
     line-height: 10vh;
+    animation: blindShadow 5s linear infinite;
   }
   #intro .farindex {
     z-index: -1;
@@ -49,7 +42,7 @@
     }
     30%,
     60% {
-      width: 60vw;
+      width: 63vw;
     }
   }
 
@@ -68,18 +61,18 @@
   .home--card__true {
     font-family: "Roboto", sans-serif;
     position: absolute;
-    bottom: 0.5vh;
+    bottom: 5%;
     left: 50vw;
-    z-index: 2;
+    z-index: 3;
     transform: translateX(-50%);
-    height: 76vh;
+    height: 78vh;
     width: 90%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: transparent;
     backdrop-filter: blur(200px);
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     padding: 35px 20px 0 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     overflow: scroll;
@@ -88,7 +81,7 @@
     animation: appear 0.7s ease-in-out;
   }
   .home--card__false {
-    display: none;
+    display: flex;
   }
   .home--button {
     outline: 0;
@@ -162,7 +155,7 @@
 
   .slideshow {
     width: 100%;
-    height: 65%;
+    height: 100%;
     overflow: hidden;
     position: absolute;
     left: 50%;
@@ -190,9 +183,67 @@
   }
   #intro .nut-slide {
     border: 0 !important;
-    /* background-color: rgba(255, 255, 255,0.2); */
   }
-  .nut-slide:active {
-    /* background-color: rgba(246, 0, 0, 0.4); */
+
+
+  #gioithieunho1{
+    background-image: url('../images/birthdayITzone.png');
+    background-repeat: repeat;
+    background-attachment:scroll;
+    background-size:90%;
+    background-position: center;
+    opacity: 0.55;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+  }
+
+  #gioithieunho2{
+    background-image: url('../images/banner.png ');
+    background-repeat: repeat;
+    background-attachment:scroll;
+    background-size:100% 50%;
+    background-position: center;
+    opacity: 0.55;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+  }
+  #gioithieunho3{
+    background-image: url('../images/live.png ');
+    background-repeat: repeat;
+    background-attachment:scroll;
+    background-size:100% 50%;
+    background-position: center;
+    opacity: 0.55;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+  }
+
+
+  #warn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #warn button {
+    outline: none;
+    border: 1px solid #333;
+    width: 100px;
+    height: 50px;
+    background-color:#ccc;
+    border-radius: 15px;
+  }
+  #warn button:hover {
+    background-color: #ddd;
   }
 }

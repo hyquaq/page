@@ -50,7 +50,7 @@
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  top: 0;
   border-radius:20px;
 }
 

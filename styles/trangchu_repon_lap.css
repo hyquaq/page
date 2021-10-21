@@ -15,8 +15,8 @@
       padding: 6px 15px;
       border-radius: 40% 8px;
       text-shadow: 10px 10px 5px rgba(51, 51, 51, 0.203);
-      height: 68.4px;
-      width: 462.92px;
+      height: 10%;
+      width: 32vw;
       overflow: hidden;
       line-height: 68.4px;
       transition: ease 0.34s;
@@ -43,7 +43,7 @@
 
     #chaomung:hover {
       cursor: pointer;
-      background-color: #d1a759ec;
+      background-color: #d1a759a2;
       font-weight: 650;
       opacity: 0.75;
       text-shadow: 2px 5px 1px #333;
@@ -70,6 +70,7 @@
       position: absolute;
       right: 25%;
       bottom: 15.5%;
+      /* transform: translateY(50%); */
     }
   
     /* ///////arrow  */
@@ -147,7 +148,7 @@
       animation: appear .7s ease-in-out;
     }
     .home--card__false{
-      display: flex ;
+      display: flex; 
     }
   
     .home--button {
@@ -230,23 +231,23 @@
       background-color: transparent;
       position:absolute;
     }
-  }
 
-  #warn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  #warn button {
-    outline: none;
-    border: 1px solid #333;
-    width: 100px;
-    height: 50px;
-    background-color:#ccc;
-    border-radius: 15px;
-  }
-  #warn button:hover {
-    background-color: #ddd;
+    #warn{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    #warn button {
+      outline: none;
+      border: 1px solid #333;
+      width: 100px;
+      height: 50px;
+      background-color:#ccc;
+      border-radius: 15px;
+    }
+    #warn button:hover {
+      background-color: #ddd;
+    }
   }
