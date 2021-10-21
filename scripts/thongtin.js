@@ -118,7 +118,7 @@ for(var i=0; i < contentTag.length; ++i){
     + Các bạn đăng nhập bằng mail sinh viên và chỉ được làm bài 1 lần duy nhất.
     + Sinh viên nhớ kiểm tra kĩ thông tin cá nhân trước khi nộp bài, nếu có sai sót về thông tin cá nhân BTC sẽ không chịu trách nhiệm.`;
         modal.style.display = 'block';
-        image.src = 'images/banner.jpg';
+        image.src = 'images/banner.png';
         title.innerHTML = 'CUỘC THI TÌM HIỂU VỀ IT-ZONE VÀ CÔNG NGHỆ XUNG QUANH TA';
         comingSoon.style.height = '90%';
         background.style.display = 'block';
