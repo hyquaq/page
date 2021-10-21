@@ -154,20 +154,20 @@ function auto() {
     kt2.style.backgroundColor = "#3f5777";
     kt.style.backgroundColor = null;
     kt3.style.backgroundColor = null;
-  }, 5500);
+  }, 8000);
   setTimeout(() => {
     slide.style.marginLeft = "-66.6%";
     khoa = -66.6;
     kt3.style.backgroundColor = "#3f5777";
     kt.style.backgroundColor = null;
     kt2.style.backgroundColor = null;
-  }, 11000);
+  }, 16000);
 }
 
 auto();
 var runSlide = setInterval(() => {
   auto();
-}, 16500);
+}, 24000);
 
 var kt = document.getElementById("b1");
 var kt2 = document.getElementById("b2");
