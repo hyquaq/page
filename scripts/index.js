@@ -1,7 +1,8 @@
 document.querySelector(".hamburger").addEventListener("click", () => {
   document.querySelector("header .menu").classList.toggle("active");
   document.querySelector("header .close-menu").classList.toggle("active");
-  console.log(document.querySelector("header .close-menu"));
+  // console.log(document.querySelector("header .close-menu"));
+// giảm lag web
 
   // chuyen doi hamburger to x
   document.querySelector(".hamburger").classList.toggle("active");
@@ -18,7 +19,7 @@ document.querySelector(".hamburger").addEventListener("click", () => {
   // }
 
   // khoa
-  chaomung.classList.toggle("farindex");
+  chaomung.classList.add("farindex");
 });
 
 // click logo
@@ -48,6 +49,10 @@ document.querySelectorAll(".menu a").forEach((element) => {
 
     // chuyen doi hamburger to x
     document.querySelector(".hamburger").classList.toggle("active");
+
+    // nâng zIndex chaomung
+    chaomung.classList.remove("farindex");
+
   });
 });
 
@@ -82,7 +87,8 @@ window.addEventListener("scroll", function (event) {
       const idSection = "#" + section.id;
       const height = section.offsetHeight;
 
-      console.log(indexSection);
+      // console.log(indexSection);
+      //...................tắt để bớt nặng web
       if (
         (html.scrollTop >= top && top + height >= html.scrollTop) ||
         indexSection == 4
@@ -99,15 +105,15 @@ window.addEventListener("scroll", function (event) {
 });
 
 window.addEventListener("click", (e) => {
-  console.log([...e.target.classList].includes("close-menu"));
+  // console.log([...e.target.classList].includes("close-menu"));
+  // giảm lag web
   if ([...e.target.classList].includes("close-menu")) {
     document.querySelector("header .menu").classList.remove("active");
     document.querySelector("header .close-menu").classList.remove("active");
 
     // chuyen doi hamburger to x
     document.querySelector(".hamburger").classList.toggle("active");
-
-    chaomung.classList.toggle("farindex");
+    chaomung.classList.remove("farindex");
   }
 });
 
@@ -124,7 +130,7 @@ intro.addEventListener(
   },
   false
 );
-// var reset = document.querySelectorAll(".menu a")[0];
+
 document.querySelectorAll(".menu a")[0].onclick = function () {
   setTimeout(function () {
     box.mesh.rotation.x = 0.5 + Math.PI;
@@ -134,7 +140,6 @@ document.querySelectorAll(".menu a")[0].onclick = function () {
 
 //.................................slide
 var slide = document.getElementById("js-slide");
-var thoigian = 1;
 function auto() {
   setTimeout(() => {
     slide.style.marginLeft = "0%";
