@@ -117,19 +117,10 @@ window.addEventListener("click", (e) => {
   }
 });
 
-//..............reset dòng chữ itzone
-intro = document.querySelector("#intro");
-intro.addEventListener(
-  "mousedown",
-  function (e) {
-    var rong = e.pageY;
-    if (rong < 170) {
-      box.mesh.rotation.x = 0.5 + Math.PI;
-      box2.mesh.rotation.y = -Math.PI;
-    }
-  },
-  false
-);
+setInterval(function () {
+  box.mesh.rotation.x = 0.5 + Math.PI;
+  box2.mesh.rotation.y = -Math.PI;
+},48000);
 
 document.querySelectorAll(".menu a")[0].onclick = function () {
   setTimeout(function () {
@@ -214,30 +205,17 @@ var BGC = document.querySelector("#backgroundClick"),
   homeCard = document.querySelector("#style-1");
 var trys = 0;
 
-chaomung.addEventListener(
-  "mouseup",
-  function () {
-    homeCard.classList.remove("home--card__false");
-    setTimeout(function () {
-      trys = 1;
-      clearInterval(runSlide);
-    }, 100);
-  },
-  false
-);
-window.onclick = function (e) {
-  if (e.target != BGC && e.target != homeCard && trys == 1) {
+document.querySelector("#warn button").onclick = function () {
+  homeCard.classList.add("home--card__false");
+}
+document.querySelector(".home--button").onclick = function () {
     homeCard.style.animation = "disappear .7s ease";
     trys = 0;
     setTimeout(function () {
-      homeCard.classList.add("home--card__false");
+      homeCard.classList.remove("home--card__false");
       homeCard.style.animation = "";
       auto();
-      runSlide = setInterval(() => {
-        auto();
-      }, 11000);
     }, 690);
-  }
 };
 
 var Colors = {

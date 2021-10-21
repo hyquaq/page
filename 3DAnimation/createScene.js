@@ -37,7 +37,7 @@ function createScene() {
 
   // Đặt vị trí cho camera
   camera.position.x = 0;
-  camera.position.z = 700;
+  camera.position.z = 710;
   camera.position.y = 0;
  
   camera.lookAt(0, -100, 0);

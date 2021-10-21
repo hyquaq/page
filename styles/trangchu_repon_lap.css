@@ -2,18 +2,18 @@
 @media (min-width: 922px) {
   #mobile_hand{display: none;}
     #chaomung {
-      position: relative;
-      top: 23%;
+      position: absolute;
+      bottom: 15.5%;
       left: 50%;
-      z-index: 1;
+      z-index: 2;
       font-size: 2.5em;
-      color: #005488;
+      color: #029eff;
       transform: translateX(-50%);
       font-weight: 666;
       font-family: Roboto;
       display: inline-block;
       padding: 6px 15px;
-      border-radius: 20px;
+      border-radius: 40% 8px;
       text-shadow: 10px 10px 5px rgba(51, 51, 51, 0.203);
       height: 68.4px;
       width: 462.92px;
@@ -43,7 +43,7 @@
 
     #chaomung:hover {
       cursor: pointer;
-      background-color: #d1a759a2;
+      background-color: #d1a759ec;
       font-weight: 650;
       opacity: 0.75;
       text-shadow: 2px 5px 1px #333;
@@ -63,13 +63,13 @@
     #wrapArrow {
       position: absolute;
       left: 25%;
-      top: 23%;
+      bottom: 15.5%;
       transform: rotateZ(-180deg);
     }
     #wrapArrow2 {
       position: absolute;
       right: 25%;
-      top: 23%;
+      bottom: 15.5%;
     }
   
     /* ///////arrow  */
@@ -86,7 +86,7 @@
       width: 1vw;
       height: 1vw;
       border: 0.3vw solid;
-      border-color: #333 transparent transparent #333;
+      border-color: rgb(255, 0, 0) transparent transparent rgb(4, 0, 255);
       transform: rotate(-45deg);
     }
   
@@ -127,18 +127,18 @@
     .home--card__true {
       font-family: "Roboto", sans-serif;
       position: absolute;
-      bottom: 0.5vh;
+      bottom: 5%;
       left: 50vw;
-      z-index: 2;
-      transform: translateX(-50%);
-      height: 76vh;
+      z-index: 3;
+      transform: translate(-50%,0%);
+      height: 78vh;
       width: var(--width-page);
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: transparent;
       backdrop-filter: blur(200px);
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      border-radius: 50px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.637);
       padding: 20px 20px 0 20px;
-      display: flex ;
+      display: none ;
       flex-direction: column;
       align-items: center;
       overflow: scroll;
@@ -147,14 +147,14 @@
       animation: appear .7s ease-in-out;
     }
     .home--card__false{
-      display: none ;
+      display: flex ;
     }
   
     .home--button {
       outline: 0;
       position:absolute;
-      right: 8px;
-      top: 8px; 
+      right: 10px;
+      top: 10px; 
       width: 36px;
       height: 36px;
       border: 0;
@@ -230,4 +230,23 @@
       background-color: transparent;
       position:absolute;
     }
+  }
+
+  #warn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #warn button {
+    outline: none;
+    border: 1px solid #333;
+    width: 100px;
+    height: 50px;
+    background-color:#ccc;
+    border-radius: 15px;
+  }
+  #warn button:hover {
+    background-color: #ddd;
   }

@@ -119,47 +119,103 @@
   <!-- 1 section lon bao ngoai ben trong la nhieu section nho 1 section la 1 chu de -->
   <section class="body">
     <!-- section trang chủ -->
+   
+
     <section class="section" id="trang-chu" style="height: 100vh">
+      <a href="#gioi-thieu">
+      <div id="chaomung">
+         <div>Welcome to ITzone club!</div>
+      </div></a>
+      <!--                       Arrow             -->
+      <div id="wrapArrow">
+        <div class="arrowAnim">
+          <div class="arrowSliding">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay3">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapArrow2">
+        <div class="arrowAnim">
+          <div class="arrowSliding">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay3">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ////////////////////slide//////////////// -->
+      <div class="slideshow">
+        <div class="slides">
+
+          <input type="radio" name="bottom" id="bottom_1">
+          <input type="radio" name="bottom" id="bottom_2">
+
+          <div class="slide s1" id="js-slide">
+            <div id="gioithieunho1"></div>
+          </div>
+
+          <div class="slide">
+            <div id="gioithieunho2"></div>
+          </div>
+
+          <div class="slide">
+            <div id="gioithieunho3"></div>
+          </div>
+
+          <div class="navigation">
+            <label for="bottom_1" class="bar" id="b1"></label>
+
+            <label for="bottom_2" class="bar" id="b2"></label>
+
+            <label for="bottom_3" class="bar" id="b3"></label>
+
+          </div>
+        </div>
+
+        <div onclick="nutSlideTrai()" class="nut-slide nut-slide-trai">
+          <i class="bx bx-left-arrow"></i>
+        </div>
+        <div onclick="nutSlidePhai()" class="nut-slide nut-slide-phai">
+          <i class="bx bx-right-arrow"></i>
+        </div> 
+
+      </div> 
+    </section>
+
+
+
+
+
+    <!-- section trang chủ -->
+    <section class="" id="gioi-thieu" style="height: 100vh">
       <!-- khoa add2 start replace-->
 
       <div id="intro">
-        <div id="chaomung">
-          <div>Welcome to ITzone club!</div>
-        </div>
-        <div id="mobile_hand">👈</div>
 
-        <div id="wrapArrow">
-          <div class="arrowAnim">
-            <div class="arrowSliding">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay1">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay2">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay3">
-              <div class="arrow"></div>
-            </div>
-          </div>
+        <div id="warn">
+          <h3>Lỡ tắt rồi thì thôi bật lên lại đi nè</h3>
+          <button>BẬT</button>
+          <h3>Đọc hết đi hẳn tắt nhe 🙂</h3>
         </div>
-        <div id="wrapArrow2">
-          <div class="arrowAnim">
-            <div class="arrowSliding">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay1">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay2">
-              <div class="arrow"></div>
-            </div>
-            <div class="arrowSliding delay3">
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
+
+        <div id="mobile_hand">👈</div>
 
         <div class="home--card__false home--card__true " id="style-1">
           <button class="home--button">
@@ -269,47 +325,6 @@
 
           <div id="backgroundClick"></div>
         </div>
-
-        <!-- ...................slide.................. -->
-        <div class="slideshow">
-          <div class="slides">
-
-            <input type="radio" name="bottom" id="bottom_1">
-            <input type="radio" name="bottom" id="bottom_2">
-
-            <div class="slide s1" id="js-slide">
-              <img src="./images/birthdayITzone.png" alt="">
-            </div>
-
-            <div class="slide">
-              <img src="./images/banner.png" alt="">
-            </div>
-
-            <div class="slide">
-              <img src="./images/live.png" alt="khoa">
-            </div>
-
-            <div class="navigation">
-              <label for="bottom_1" class="bar" id="b1"></label>
-
-              <label for="bottom_2" class="bar" id="b2"></label>
-
-              <label for="bottom_3" class="bar" id="b3"></label>
-
-            </div>
-          </div>
-
-          <div onclick="nutSlideTrai()" class="nut-slide nut-slide-trai">
-            <i class="bx bx-left-arrow"></i>
-          </div>
-          <div onclick="nutSlidePhai()" class="nut-slide nut-slide-phai">
-            <i class="bx bx-right-arrow"></i>
-          </div>
-
-        </div>
-
-
-
         <!-- /////////////////////////////////////////////////////// -->
       </div>
 
