@@ -1,6 +1,6 @@
 /* //////////////////////////////////////////mobile */
 @media (max-width: 922px) {
-  #mobile_hand{
+  #mobile_hand {
     position: absolute;
     top: 24vh;
     right: 5vw;
@@ -57,15 +57,15 @@
 
   /* .............Arrow.......................... */
   #wrapArrow {
-   display:none;
+    display: none;
   }
   #wrapArrow2 {
-   display:none;
+    display: none;
   }
-  
+
   /* ............................home............. */
-  
-  .home--card__true{
+
+  .home--card__true {
     font-family: "Roboto", sans-serif;
     position: absolute;
     bottom: 0.5vh;
@@ -79,16 +79,16 @@
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     padding: 35px 20px 0 20px;
-    display: flex ;
+    display: flex;
     flex-direction: column;
     align-items: center;
     overflow: scroll;
     overflow-x: hidden;
     overscroll-behavior: auto;
-    animation: appear .7s ease-in-out;
+    animation: appear 0.7s ease-in-out;
   }
-  .home--card__false{
-    display: none ;
+  .home--card__false {
+    display: none;
   }
   .home--button {
     outline: 0;
@@ -127,12 +127,12 @@
   }
   .section-card-content p {
     text-indent: -0.5em;
-    margin:5px 0;
+    margin: 5px 0;
     line-height: 130%;
   }
-  .section-card-content h2{
+  .section-card-content h2 {
     text-indent: -0.5em;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     font-size: 150%;
   }
   .subsection-card hr {
@@ -142,8 +142,8 @@
   #active-img {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     align-content: center;
   }
   .subsection-card img {
@@ -155,13 +155,12 @@
     height: 300%;
     width: 100%;
     background-color: transparent;
-    position:absolute;
+    position: absolute;
   }
- 
 
-/* ......................slides............... */
+  /* ......................slides............... */
 
-.slideshow{
+  .slideshow {
     width: 100%;
     height: 65%;
     overflow: hidden;
@@ -174,27 +173,26 @@
     width: 14px;
     height: 14px;
   }
-  .slide{
-    display:flex;
+  .slide {
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  .slide img{
+  .slide img {
     width: 100%;
     height: auto;
     border-radius: 20px;
     opacity: 0.85;
   }
-  .s1>img{
-      height:80%;
-      width:auto;
+  .s1 > img {
+    height: 80%;
+    width: auto;
   }
-  #intro .nut-slide{
-    border:0 !important;
-    background-color: rgba(255, 255, 255,0.2);
+  #intro .nut-slide {
+    border: 0 !important;
+    /* background-color: rgba(255, 255, 255,0.2); */
   }
-  .nut-slide:active{
-      background-color: rgba(246, 0, 0, 0.4);
+  .nut-slide:active {
+    /* background-color: rgba(246, 0, 0, 0.4); */
   }
-
 }
