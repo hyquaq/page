@@ -97,6 +97,7 @@ for(var i=0; i < contentTag.length; ++i){
                 title.innerHTML = 'CUỘC THI THIẾT KẾ POSTER MỪNG SINH NHẬT 5 TUỔI IT-ZONE ';
                 comingSoon.style.height = '90%';
                 background.style.display = 'block';
+                modal.scrollTop = 0;
                 break;
             case 'IT02':
                 content.innerHTML = `
@@ -122,6 +123,7 @@ for(var i=0; i < contentTag.length; ++i){
         title.innerHTML = 'CUỘC THI TÌM HIỂU VỀ IT-ZONE VÀ CÔNG NGHỆ XUNG QUANH TA';
         comingSoon.style.height = '90%';
         background.style.display = 'block';
+        modal.scrollTop = 0;
         break;
         case 'IT03':
             content.innerHTML = `
@@ -189,6 +191,7 @@ Thông tin chi tiết liên hệ:
     title.innerHTML = 'ĐĂNG KÝ ỨNG TUYỂN THÀNH VIÊN CLB IT-ZONE 2021';
     comingSoon.style.height = '90%';
     background.style.display = 'block';
+    modal.scrollTop = 0;
     break;
 
     case 'IT04':
@@ -224,6 +227,7 @@ Và đừng lo khi bạn chưa có ý tưởng! Đội ngũ chuyên gia tại GD
     title.innerHTML = 'HỖ TRỢ TRUYỀN THÔNG';
     comingSoon.style.height = '90%';
     background.style.display = 'block';
+    modal.scrollTop = 0;
     break;
     default:
         content.innerHTML = 'Đang cập nhật';
