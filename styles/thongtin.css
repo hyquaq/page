@@ -68,6 +68,7 @@ a:visited {
     justify-content: center;
     border-radius: 15px 15px 0 0;
     z-index: -9;
+    user-select: none;
 }
 #hoat-dong .bottom .incoming .content,
 #hoat-dong .bottom .recent .content,
@@ -79,6 +80,7 @@ a:visited {
     width: 90%;
     margin: auto;
     transition: 0.2s;
+    user-select: none;
 }
 #hoat-dong .bottom .incoming .content div,
 #hoat-dong .bottom .recent .content div,
@@ -130,14 +132,112 @@ div .more {
     bottom: 10px;
     text-align: center;
     margin-left: 5%;
+    bottom: 0px;
     display: none;
 }
-@media only screen and (max-width: 510px) {
+#hoat-dong #information {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 5%;
+    top: 5%;
+    width: 90%; 
+    height: 90%; 
+    overflow: auto; 
+    background-color: white; 
+    border-radius: 15px;
+    display: none;
+}
+#hoat-dong .backgroundInfor {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 120%;
+    height: 400%;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+#hoat-dong #information::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 50%;
+}
+#hoat-dong #information #headerInformation {
+    background-color: black;
+    height: 10%;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+#hoat-dong #information #button i{
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 10px;
+}
+#hoat-dong #information img {
+    width: 30%;
+    height: auto;
+    margin: 2% 35% 2% 35%;
+}
+#hoat-dong #information #title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+}
+#hoat-dong #information #infor {
+    padding: 3%;
+    padding-top: 1%;
+    border-top: 2px solid rgb(199, 199, 199);
+}
+#hoat-dong #information #closeButton {
+    width: 10%;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    /* margin-left: 85%; */
+    margin: 1% 0 1% 85%;
+}
+#hoat-dong #information #end {
+    position: relative;
+    height: fit-content;
+    border-top: 2px solid rgb(199, 199, 199);
+}
+/*Mobile*/
+@media only screen and (max-width:510px) {
     #hoat-dong .bottom {
         flex-direction: column;
     }
     #hoat-dong {
         height: fit-content; 
+    }
+    #hoat-dong .backgroundInfor {
+        height: 800%;
+    }
+    #hoat-dong #information #button i{
+        font-size: 40px;
+    }
+    #hoat-dong #information #headerInformation {
+        height: fit-content;
+    }
+    #hoat-dong #information #title {
+        width: 80%;
+
+    }
+    #hoat-dong #information #closeButton {
+        width: fit-content;
+    margin: 2% 0 2% 80%;
+        
     }
     #hoat-dong .bottom .incoming,
     #hoat-dong .bottom .recent,
@@ -167,8 +267,9 @@ div .more {
     #hoat-dong .bottom .incoming .content,
     #hoat-dong .bottom .recent .content,
     #hoat-dong .bottom .feature .content {
-        height: 50px;
+        height: 46px;
         margin-top: -15px;
+        overflow: auto;
     }
     #hoat-dong .bottom .incoming:hover .content,
     #hoat-dong .bottom .recent:hover .content,

@@ -152,9 +152,9 @@
   
     .home--button {
       outline: 0;
-      position: absolute;
-      right: 10px;
-      top: 10px;
+      position:absolute;
+      right: 8px;
+      top: 8px; 
       width: 36px;
       height: 36px;
       border: 0;
