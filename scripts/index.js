@@ -206,14 +206,15 @@ function kiem() {
 //////////////// ..........................................Trang chu
 var BGC = document.querySelector("#backgroundClick"),
   homeCard = document.querySelector("#style-1");
-var trys = 0;
 
+var warn = document.querySelector("#warn");
 document.querySelector("#warn button").onclick = function () {
   homeCard.classList.add("home--card__false");
+  warn.style.display = "none";
 }
 document.querySelector(".home--button").onclick = function () {
     homeCard.style.animation = "disappear .7s ease";
-    trys = 0;
+    warn.style.display = "block";
     setTimeout(function () {
       homeCard.classList.remove("home--card__false");
       homeCard.style.animation = "";
