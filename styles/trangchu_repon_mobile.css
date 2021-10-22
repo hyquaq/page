@@ -136,6 +136,9 @@
     align-items: center;
     justify-content: center;
   }
+  /* .slides #js-slide{
+    margin-left: -33.3%;
+  } */
   .slide img {
     width: 100%;
     height: auto;

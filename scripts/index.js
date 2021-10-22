@@ -133,7 +133,7 @@ window.addEventListener("scroll", function (event) {
 
 
 //.................................slide
-var slide = document.getElementById("js-slide");
+var slide = document.querySelector(".slide");
 if ($(window).width() > 1024){
   function auto() {
     setTimeout(() => {
