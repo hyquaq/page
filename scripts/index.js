@@ -19,7 +19,7 @@ document.querySelector(".hamburger").addEventListener("click", () => {
   // }
 
   // khoa
-  chaomung.classList.add("farindex");
+  // chaomung.classList.add("farindex");
 });
 
 // click logo
@@ -51,7 +51,7 @@ document.querySelectorAll(".menu a").forEach((element) => {
     document.querySelector(".hamburger").classList.toggle("active");
 
     // nâng zIndex chaomung
-    chaomung.classList.remove("farindex");
+    // chaomung.classList.remove("farindex");
 
   });
 });
@@ -113,7 +113,7 @@ window.addEventListener("click", (e) => {
 
     // chuyen doi hamburger to x
     document.querySelector(".hamburger").classList.toggle("active");
-    chaomung.classList.remove("farindex");
+    // chaomung.classList.remove("farindex");
   }
 });
 

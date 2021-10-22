@@ -40,7 +40,7 @@ function createScene() {
   camera.position.z = 710;
   camera.position.y = 0;
  
-  camera.lookAt(0, -100, 0);
+  camera.lookAt(0, -90, 0);
 
   // Tạo renderer
   renderer = new THREE.WebGLRenderer({

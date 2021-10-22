@@ -1,50 +1,6 @@
 /* //////////////////////////////////////////mobile */
 @media (max-width: 922px) {
-  #chaomung {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    z-index: 2;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 1.05em;
-    color: #029eff;
-    font-weight: 650;
-    font-family: Roboto;
-    display: inline-block;
-    padding: 0px 1vw;
-    border-radius: 40% 8px;
-    text-shadow: 10px 10px 5px rgba(51, 51, 51, 0.203);
-    height: 10%;
-    width: 66vw;
-    overflow: hidden;
-    line-height: 10vh;
-    animation: blindShadow 5s linear infinite;
-  }
-  #intro .farindex {
-    z-index: -1;
-  }
-  #chaomung:active {
-    background-color: #ffb62da2;
-  }
-  #chaomung div {
-    box-shadow: 2.5px 0px 0px #0066a4;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    animation: textTyping 5s linear infinite;
-  }
-  @keyframes textTyping {
-    0%,
-    90%,
-    100% {
-      width: 0px;
-    }
-    30%,
-    60% {
-      width: 63vw;
-    }
-  }
+ #chaomung{display:none;}
 
   /* ............ chỉnh từ phần arrow từ lap sang mobile................ */
 
@@ -232,6 +188,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 1;
     transform: translate(-50%, -50%);
     text-align: center;
   }
