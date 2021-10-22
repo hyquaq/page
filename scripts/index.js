@@ -131,12 +131,6 @@ window.addEventListener("scroll", function (event) {
 });
 
 
-document.querySelectorAll(".menu a")[0].onclick = function () {
-  setTimeout(function () {
-    box.mesh.rotation.x = 0.5 + Math.PI;
-    box2.mesh.rotation.y = -Math.PI;
-  },1000);
-};
 
 //.................................slide
 var slide = document.getElementById("js-slide");
@@ -231,3 +225,21 @@ var Colors = {
   maincolor: "#0066a4",
   color: "#7ec142",
 };
+
+
+var slider = document.querySelector(".slideshow");
+function showVideo() {
+  var video = document.querySelector("#video");
+video.style.display = "flex";
+slider.style.opacity = "0.3";
+alert("Hãy coi hết video sẽ tắt. ok?")
+}
+
+
+document.querySelector("#video video").addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        if(!e) { e = window.event; }
+        alert("Video Finished");
+        video.style.display = "none";
+        slider.style.opacity = "1";
+    }

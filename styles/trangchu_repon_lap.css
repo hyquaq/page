@@ -149,6 +149,7 @@
       overscroll-behavior: auto;
       animation: appear .7s ease-in-out;
       font-size: 95%;
+      color: #ffffff;
     }
     .home--card__false{
       display: flex; 
@@ -265,5 +266,65 @@
       position: absolute;
       top: 0;
       border-radius: 20px;
+    }
+
+/* //////////////////video                   */
+
+    #but__playvideo{
+      height: 13vh;
+      width: 13vw;
+      position: absolute;
+      bottom:0;
+      left:0;
+      z-index: 5;
+      background-color: transparent;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius:25px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #but__playvideo:hover{
+      backdrop-filter: blur(100px);
+      -webkit-backdrop-filter: blur(100px);
+    }
+    #but__playvideo button{
+      outline: none;
+      height:55%;
+      width:60%;
+      font-size: 15px;
+      border-radius: 20px;
+      border: 1px dashed #1c1038;
+      background-color: #1a1d6b;
+      color:white;
+    }
+    #but__playvideo button:hover{
+      border: 1px solid #1c103881;
+      background-color: #1011297a;
+    }
+    #but__playvideo button:active{
+      background-color: #c209377a;
+    }
+    #but__playvideo:active{
+      background-color: #c2b6097a;
+    }
+
+    #video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      z-index: 4;
+      opacity: 1;
+      /* display: flex; */
+      align-items: center;
+      justify-content: center;
+      display: none;
+    }
+    #video video{
+      height:80%;
+      border-radius:10px;
     }
   }
