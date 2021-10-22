@@ -29,8 +29,9 @@
     height: 78vh;
     width: 90%;
     background-color: transparent;
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
+    -webkit-filter: blur(0px);
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     padding: 35px 20px 0 20px;
