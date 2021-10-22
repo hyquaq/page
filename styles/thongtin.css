@@ -87,8 +87,8 @@ a:visited {
 #hoat-dong .bottom .feature .content div {
     height: fit-content;
     border-bottom: 1px solid black;
-    margin-bottom: 20px;
     cursor: pointer;
+    padding-top: 20px;
 }
 #hoat-dong .bottom .incoming:hover,
 #hoat-dong .bottom .recent:hover,
@@ -267,7 +267,7 @@ div .more {
     #hoat-dong .bottom .incoming .content,
     #hoat-dong .bottom .recent .content,
     #hoat-dong .bottom .feature .content {
-        height: 46px;
+        height: 50px;
         margin-top: -15px;
         overflow: auto;
     }
@@ -275,5 +275,22 @@ div .more {
     #hoat-dong .bottom .recent:hover .content,
     #hoat-dong .bottom .feature:hover .content {
         height: 50px;
+    }
+    #hoat-dong .bottom .incoming .content div:nth-child(odd),
+    #hoat-dong .bottom .recent .content div:nth-child(odd),
+    #hoat-dong .bottom .feature .content div:nth-child(odd) {
+        margin-bottom: 10px;
+        border: none;
+        padding: 5px 5px;
+        background-color: rgb(228, 228, 228);
+        border-radius: 5px;
+
+    }
+    #hoat-dong .bottom .incoming .content div:nth-child(even),
+    #hoat-dong .bottom .recent .content div:nth-child(even),
+    #hoat-dong .bottom .feature .content div:nth-child(even) {
+        margin-bottom: 10px;
+        border: none;
+        padding: 5px 5px;
     }
 }
