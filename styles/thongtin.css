@@ -282,7 +282,6 @@ div .more {
         margin-bottom: 10px;
         border: none;
         padding: 5px 5px;
-        background-color: rgb(228, 228, 228);
         border-radius: 5px;
 
     }
@@ -292,5 +291,6 @@ div .more {
         margin-bottom: 10px;
         border: none;
         padding: 5px 5px;
+        background-color: rgb(228, 228, 228);
     }
 }
