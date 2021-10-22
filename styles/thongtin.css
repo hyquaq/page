@@ -282,8 +282,6 @@ div .more {
         margin-bottom: 10px;
         border: none;
         padding: 5px 5px;
-        border-radius: 5px;
-
     }
     #hoat-dong .bottom .incoming .content div:nth-child(even),
     #hoat-dong .bottom .recent .content div:nth-child(even),
@@ -292,5 +290,6 @@ div .more {
         border: none;
         padding: 5px 5px;
         background-color: rgb(228, 228, 228);
+        border-radius: 5px;
     }
 }
