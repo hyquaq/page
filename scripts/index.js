@@ -238,7 +238,7 @@ alert("Hãy coi hết video sẽ tắt. ok?")
 
 document.querySelector("#video video").addEventListener('ended',myHandler,false);
     function myHandler(e) {
-        if(!e) { e = window.event; }
+        // if(!e) { e = window.event; }
         alert("Video Finished");
         video.style.display = "none";
         slider.style.opacity = "1";

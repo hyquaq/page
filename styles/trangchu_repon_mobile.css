@@ -191,6 +191,9 @@
     top: 0;
     border-radius: 20px;
   }
+  #gioithieunho1-2{
+    display:none;
+  }
 
 
   #warn{
@@ -219,4 +222,57 @@
 
 
 
+/* //////////////////video                   */
+
+#but__playvideo{
+  height: 10vh;
+  width: 20vw;
+  position: absolute;
+  bottom:0;
+  left:0;
+  z-index: 5;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius:25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#but__playvideo button{
+  outline: none;
+  height:55%;
+  width:80%;
+  font-size: 8px;
+  border-radius: 20px;
+  border: 1px dashed #1c1038;
+  background-color: #1a1d6b;
+  color:white;
+}
+#but__playvideo button:active{
+  background-color: #c209377a;
+}
+#but__playvideo:active{
+  background-color: #c2b6097a;
+}
+
+#video {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 4;
+  opacity: 1;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+#video video{
+  width:100%;
+  border-radius:10px;
+}
 }
