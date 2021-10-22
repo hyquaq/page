@@ -98,6 +98,7 @@ input[name="bottom"] {
 .slides {
   width: 300%;
   height: 100%;
+  display: -webkit-box;
   display: -webkit-flexbox;
   display: -ms-flexbox; /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
