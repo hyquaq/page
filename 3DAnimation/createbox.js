@@ -255,7 +255,7 @@ Box2 = function () {
   
     // đặt vị trí phía dưới scene
     box2.mesh.position.set(32, 350,10);
-    box2.mesh.rotation.y  = -Math.PI;
+    // box2.mesh.rotation.y  = -Math.PI;
   box2.mesh.rotation.x  = 0.58;
   box2.mesh.scale.set(0.7, 0.7, 0.7);
     // thêm lưới này vào scene1.5

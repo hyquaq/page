@@ -256,7 +256,7 @@ function createHouse() {
   // đặt vị trí phía dưới scene
     box.mesh.position.set(35, 350  ,0);
     // box.mesh.rotation.y  = -Math.PI/2 ;
-  box.mesh.rotation.x  = 0.58 +Math.PI;
+  box.mesh.rotation.x  = 0.58 ;
   box.mesh.scale.set(0.7, 0.7, 0.7);
   // thêm lưới này vào scene
   scene.add(box.mesh);

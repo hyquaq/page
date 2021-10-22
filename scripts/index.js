@@ -117,16 +117,25 @@ window.addEventListener("click", (e) => {
   }
 });
 
-setInterval(function () {
-  box.mesh.rotation.x = 0.5 + Math.PI;
-  box2.mesh.rotation.y = -Math.PI;
-},48000);
+// setInterval(function () {
+//   box.mesh.rotation.x = 0.5 + Math.PI;
+//   box2.mesh.rotation.y = -Math.PI;
+// },48000);
+window.addEventListener("scroll", function (event) {
+  if (this.scrollY > 200 && this.scrollY < 300){
+    setTimeout(function () {
+      box.mesh.rotation.x = 0.5 + Math.PI;
+    box2.mesh.rotation.y = -Math.PI;
+    },100)
+  }
+});
+
 
 document.querySelectorAll(".menu a")[0].onclick = function () {
   setTimeout(function () {
     box.mesh.rotation.x = 0.5 + Math.PI;
     box2.mesh.rotation.y = -Math.PI;
-  },500);
+  },1000);
 };
 
 //.................................slide
