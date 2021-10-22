@@ -134,34 +134,36 @@ window.addEventListener("scroll", function (event) {
 
 //.................................slide
 var slide = document.getElementById("js-slide");
-function auto() {
-  setTimeout(() => {
-    slide.style.marginLeft = "0%";
-    khoa = 0;
-    kt.style.backgroundColor = "#3f5777";
-    kt2.style.backgroundColor = null;
-    kt3.style.backgroundColor = null;
-  }, 0000);
-  setTimeout(() => {
-    slide.style.marginLeft = "-33.3%";
-    khoa = -33.3;
-    kt2.style.backgroundColor = "#3f5777";
-    kt.style.backgroundColor = null;
-    kt3.style.backgroundColor = null;
-  }, 8000);
-  setTimeout(() => {
-    slide.style.marginLeft = "-66.6%";
-    khoa = -66.6;
-    kt3.style.backgroundColor = "#3f5777";
-    kt.style.backgroundColor = null;
-    kt2.style.backgroundColor = null;
-  }, 16000);
-}
-
-auto();
-var runSlide = setInterval(() => {
+if ($(window).width() > 1024){
+  function auto() {
+    setTimeout(() => {
+      slide.style.marginLeft = "0%";
+      khoa = 0;
+      kt.style.backgroundColor = "#3f5777";
+      kt2.style.backgroundColor = null;
+      kt3.style.backgroundColor = null;
+    }, 0000);
+    setTimeout(() => {
+      slide.style.marginLeft = "-33.3%";
+      khoa = -33.3;
+      kt2.style.backgroundColor = "#3f5777";
+      kt.style.backgroundColor = null;
+      kt3.style.backgroundColor = null;
+    }, 8000);
+    setTimeout(() => {
+      slide.style.marginLeft = "-66.6%";
+      khoa = -66.6;
+      kt3.style.backgroundColor = "#3f5777";
+      kt.style.backgroundColor = null;
+      kt2.style.backgroundColor = null;
+    }, 16000);
+  }
+  
   auto();
-}, 24000);
+  var runSlide = setInterval(() => {
+    auto();
+  }, 24000);
+}
 
 var kt = document.getElementById("b1");
 var kt2 = document.getElementById("b2");
