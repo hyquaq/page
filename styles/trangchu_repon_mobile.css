@@ -41,6 +41,7 @@
     overflow-x: hidden;
     overscroll-behavior: auto;
     animation: appear 0.7s ease-in-out;
+    -webkit-animation: appear 0.7s ease-in-out;
   }
   .home--card__false {
     display: flex;
