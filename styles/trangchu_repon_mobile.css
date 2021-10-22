@@ -1,7 +1,12 @@
 /* //////////////////////////////////////////mobile */
 @media (max-width: 922px) {
+  #intro {
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(to right, #7caac7,rgba(118, 156, 214, 0.805));
+    box-shadow: 0px 0px 20px #0065a477;
+  }
  #chaomung{display:none;}
-
   /* ............ chỉnh từ phần arrow từ lap sang mobile................ */
 
   /* .............Arrow.......................... */
@@ -24,7 +29,7 @@
     height: 78vh;
     width: 90%;
     background-color: transparent;
-    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     padding: 35px 20px 0 20px;
@@ -143,10 +148,10 @@
 
 
   #gioithieunho1{
-    background-image: url('../images/birthdayITzone.png');
+    background-image: url('../images/tuyenthanhvien.jpg');
     background-repeat: repeat;
     background-attachment:scroll;
-    background-size:90%;
+    background-size:100% 50%;
     background-position: center;
     opacity: 0.7;
     width: 100%;
@@ -188,7 +193,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 1;
+    z-index: 0;
     transform: translate(-50%, -50%);
     text-align: center;
   }
