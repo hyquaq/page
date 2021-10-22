@@ -143,6 +143,7 @@ var slide = document.getElementById("js-slide");
 function auto() {
   setTimeout(() => {
     slide.style.marginLeft = "0%";
+    slide.style.WebkitMarginLeft = "0%";
     khoa = 0;
     kt.style.backgroundColor = "#3f5777";
     kt2.style.backgroundColor = null;
@@ -150,6 +151,7 @@ function auto() {
   }, 0000);
   setTimeout(() => {
     slide.style.marginLeft = "-33.3%";
+    slide.style.WebkitMarginLeft = "-33.3%";
     khoa = -33.3;
     kt2.style.backgroundColor = "#3f5777";
     kt.style.backgroundColor = null;
@@ -157,6 +159,7 @@ function auto() {
   }, 8000);
   setTimeout(() => {
     slide.style.marginLeft = "-66.6%";
+    slide.style.WebkitMarginLeft = "-66.6%";
     khoa = -66.6;
     kt3.style.backgroundColor = "#3f5777";
     kt.style.backgroundColor = null;

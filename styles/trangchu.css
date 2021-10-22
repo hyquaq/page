@@ -50,6 +50,7 @@
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   top: 0;
   border-radius:20px;
 }
@@ -59,6 +60,7 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   display: flex;
 }
 
@@ -92,11 +94,13 @@ input[name="bottom"] {
   width: 300%;
   height: 100%;
   display: flex;
+  
 }
 
 .slide {
   width: 33.3%;
   transition: linear 1.2s;
+  
   text-align: center;
 }
 
