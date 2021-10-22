@@ -339,3 +339,8 @@ Và đừng lo khi bạn chưa có ý tưởng! Đội ngũ chuyên gia tại GD
     }
 
 }
+window.onclick = function(event) {
+    if (event.target == background) {
+      background.style.display = "none";
+    }
+  }
