@@ -134,7 +134,7 @@ window.addEventListener("scroll", function (event) {
 
 //.................................slide
 var slide = document.querySelector(".slide");
-if ($(window).width() > 1024){
+// if ($(window).width() > 1024){
   function auto() {
     setTimeout(() => {
       slide.style.marginLeft = "0%";
@@ -163,7 +163,7 @@ if ($(window).width() > 1024){
   var runSlide = setInterval(() => {
     auto();
   }, 24000);
-}
+// }
 
 var kt = document.getElementById("b1");
 var kt2 = document.getElementById("b2");
