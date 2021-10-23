@@ -78,7 +78,7 @@ for(var i=0; i < contentTag.length; ++i){
                 <br>
                 👉	Cách thức tham gia:
                 <br>
-                    - Bước 1: Like fanpage IT-ZONE – Trường Đại học Tôn Đức Thắng (www.facebook.com/caitzone/).
+                    - Bước 1: Like fanpage IT-ZONE – Trường Đại học Tôn Đức Thắng (<a style="color: blue; text-decoration: underline" href="https://www.facebook.com/caitzone"> www.facebook.com/caitzone/</a>).
                     <br>
                     - Bước 2: Like, share bài viết này ở chế độ công khai và tag ít nhất 3 người bạn là sinh viên của TDTU.
                     <br>
@@ -133,7 +133,7 @@ for(var i=0; i < contentTag.length; ++i){
     <br>
     👉Cách thức tham gia:
     <br>
-    -	Bước 1: Like fanpage IT-ZONE – Trường Đại học Tôn Đức Thắng ( www.facebook.com/caitzone/ ) 
+    -	Bước 1: Like fanpage IT-ZONE – Trường Đại học Tôn Đức Thắng (<a style="color: blue; text-decoration: underline" href="https://www.facebook.com/caitzone"> www.facebook.com/caitzone/</a> ) 
     <br>
     -	Bước 2: Like, share bài viết này ở chế độ công khai và tag thêm ít nhất 3 người bạn là sinh viên TDTU.
     <br>
@@ -258,13 +258,13 @@ Team PR & sự kiện:
 <br>
 ——————————————————
 <br>
-LINK đăng ký: https://forms.gle/CsPca2ZVmWRhoyCJA
+LINK đăng ký: <a style="color: blue; text-decoration: underline" href="https://forms.gle/CsPca2ZVmWRhoyCJA">https://forms.gle/CsPca2ZVmWRhoyCJA</a> 
 <br>
 Thông tin chi tiết liên hệ:
 <br>
 - Email: clbitzone@gmail.com
 <br>
-- Fanpage: IT-Zone - Trường ĐH Tôn Đức Thắng
+- Fanpage: <a style="color: blue; text-decoration: underline" href="https://www.facebook.com/caitzone">IT-Zone - Trường ĐH Tôn Đức Thắng</a>
 <br>
 ——————————————————`;
     modal.style.display = 'block';
@@ -310,9 +310,9 @@ Và đừng lo khi bạn chưa có ý tưởng! Đội ngũ chuyên gia tại GD
 <br>
 🌟 Hoàn thiện dự án với những ý kiến đóng góp từ Ban giám khảo.
 <br>
-👉 “Mạnh dạn” làm chủ cuộc đua cùng đội ngũ GDG Devfest MienTrung 2021 tại https://bit.ly/devfest21
+👉 “Mạnh dạn” làm chủ cuộc đua cùng đội ngũ GDG Devfest MienTrung 2021 tại <a style="color: blue; text-decoration: underline" href="https://bit.ly/devfest21">https://bit.ly/devfest21</a>
 <br>
-⏩ Chi tiết cuộc thi: https://www.facebook.com/Gdgmientrung
+⏩ Chi tiết cuộc thi: <a style="color: blue; text-decoration: underline" href="https://www.facebook.com/Gdgmientrung">https://www.facebook.com/Gdgmientrung</a>
 <br>
 --------------------------------------------------
 <br>
@@ -320,7 +320,7 @@ Và đừng lo khi bạn chưa có ý tưởng! Đội ngũ chuyên gia tại GD
 <br>
 ⏰ Thời gian: 18:30 ngày 13/10/2021.
 <br>
-📍 Link đăng ký: https://bit.ly/webinar-devfest21`;
+📍 Link đăng ký: <a style="color: blue; text-decoration: underline" href="https://bit.ly/webinar-devfest21">https://bit.ly/webinar-devfest21</a>`;
     modal.style.display = 'block';
     image.src = 'images/ho-tro-truyen-thong.jpg';
     title.innerHTML = 'HỖ TRỢ TRUYỀN THÔNG';
