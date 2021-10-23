@@ -135,14 +135,42 @@
     width: 14px;
     height: 14px;
   }
-  .slide {
+  /* .slide {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  /* .slides #js-slide{
-    margin-left: -33.3%;
   } */
+
+  .slides {
+    background: red;
+    color: white;
+    width: 300%;
+    height: 100%;
+    display: -webkit-flexbox;
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-box;
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    -webkit-scroll-snap-points-x: repeat(300px);
+    -ms-scroll-snap-points-x: repeat(300px);
+        scroll-snap-points-x: repeat(300px);
+-webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory;
+  }
+  .slides > .slide:target {
+    transform: scale(0.3);
+  }
+  .slide {
+    /* width: 300px; */
+    flex-shrink: 0;
+    height: 100%;
+  }
+
   .slide img {
     width: 100%;
     height: auto;

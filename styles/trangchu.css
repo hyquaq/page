@@ -109,7 +109,6 @@ input[name="bottom"] {
 .slide {
   width: 33.3%;
   transition: linear 1.2s;
-
   text-align: center;
 }
 
