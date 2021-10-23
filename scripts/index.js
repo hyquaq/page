@@ -221,7 +221,7 @@ document.querySelector(".home--button").onclick = function () {
       homeCard.classList.remove("home--card__false");
       homeCard.style.animation = "";
       auto();
-    }, 690);
+    }, 650);
 };
 
 var Colors = {

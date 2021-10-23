@@ -14,15 +14,15 @@ function createLights() {
   shadowLight.position.set(150, 350, 350);
 
   // Cho phép phủ bóng
-  shadowLight.castShadow = true;
+  // shadowLight.castShadow = false;
 
   // cài đặt vùng nhìn thấy của bóng đổ
-  shadowLight.shadow.camera.left = -400;
-  shadowLight.shadow.camera.right = 400;
-  shadowLight.shadow.camera.top = 400;
-  shadowLight.shadow.camera.bottom = -400;
-  shadowLight.shadow.camera.near = 1;
-  shadowLight.shadow.camera.far = 1000;
+  // shadowLight.shadow.camera.left = -400;
+  // shadowLight.shadow.camera.right = 400;
+  // shadowLight.shadow.camera.top = 400;
+  // shadowLight.shadow.camera.bottom = -400;
+  // shadowLight.shadow.camera.near = 1;
+  // shadowLight.shadow.camera.far = 1000;
 
   // cài đặt độ phân giải của bóng đổ; càng cao càng đẹp,
   // nhưng cũng càng nặng nề hơn

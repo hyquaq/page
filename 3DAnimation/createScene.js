@@ -50,7 +50,7 @@ function createScene() {
 
     // Bật khử răng cưa; hiệu năng sẽ giảm
     // nhưng sẽ ổn thôi vì project này ít đối tượng
-    antialias: false,
+    antialias: true,
   });
 
   // Xác định kích cỡ của renderer; trong trường hợp này,

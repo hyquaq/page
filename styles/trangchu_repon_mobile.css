@@ -1,10 +1,14 @@
 /* //////////////////////////////////////////mobile */
 @media (max-width: 922px) {
+  #gioi-thieu{
+    background-color: #1a1d6b;
+  }
   #intro {
     height: 100%;
     width: 100vw;
     background: linear-gradient(to right, #7caac7,rgba(118, 156, 214, 0.805));
     box-shadow: 0px 0px 20px #0065a477;
+    border-radius: 100px;
   }
  #chaomung{display:none;}
   /* ............ chỉnh từ phần arrow từ lap sang mobile................ */
