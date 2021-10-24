@@ -203,9 +203,8 @@ div .more {
     background-color: black;
     position: relative;
     padding: 5px 10px 5px 10px;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
-    /* margin-left: 85%; */
     margin: 1% 0 1% 85%;
 }
 #hoat-dong #information #end {
