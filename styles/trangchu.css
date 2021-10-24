@@ -2,9 +2,9 @@
 #intro {
   height: 100%;
   width: 100vw;
-  background: linear-gradient(to right, #7caac7, rgba(81, 109, 151, 0.805));
+  /* background: linear-gradient(to right, #7caac7, rgba(81, 109, 151, 0.805)); */
   box-shadow: 0px 0px 20px #0065a477;
-  border-radius: 300px;
+  border-radius: 0px;
 }
 #chaomung {
   user-select: none !important;
@@ -166,7 +166,7 @@ display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
   width: 100%;
   background-color: #222;
   opacity: 1;
-  border-radius: 20px;
+  border-radius: 00px;
   box-shadow: 0 0 15px rgb(122, 122, 122);
 }
 #trang-chu {
