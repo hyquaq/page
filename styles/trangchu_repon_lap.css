@@ -167,6 +167,8 @@
       padding: 0;
       cursor: pointer;
       z-index: 3;
+      background-color: rgba(221, 221, 221, 0.411);
+      border-radius: 20px;
     }
     .section-card h1 {
       font-weight: 500;
